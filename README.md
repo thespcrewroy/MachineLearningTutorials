@@ -1,6 +1,6 @@
 # DS/ML/AI Tutorials
 
-## Data Analytics=
+## Data Analytics
 * **Google Analytics:** web analytics platform that tracks and reports website traffic, user behavior, and marketing performance
 * **Meta Pixel:** tracking tool from Meta for measuring actions and optimizing ads on Facebook and Instagram
 * **Tiktok Pixel:** monitors user activity on a website to measure ad performance and optimize TikTok advertising campaigns
