@@ -7,6 +7,7 @@
 * **Snapchat Pixel:** helps measure conversions, optimize ads, and build audiences for Snapchat advertising campaigns
 
 ## Business Analytics
+* **Gartner:** leading global research and advisory company that helps businesses and government agencies make data-driven decisions
 * **PowerBI:** business analytics platform by Microsoft that transforms data into interactive dashboards and visual reports
 * **Tableau:** interactive data visualization software company focused on business intelligence
 
