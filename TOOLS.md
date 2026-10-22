@@ -110,8 +110,6 @@
     - **[Power BI](https://learn.microsoft.com/en-us/power-bi/)**: Microsoft's platform that turns data into interactive dashboards and reports
         - **[DAX (Data Analysis Expressions)](https://learn.microsoft.com/en-us/dax/)**: formula language for calculations in Power BI and Excel
     - **[Tableau](https://help.tableau.com/)**: interactive data visualization software for business intelligence
-- **Business Model Canvas**
-    - **[Strategyzer](https://www.strategyzer.com/)**: business model and strategy tools, including the Business Model Canvas
 - **Spreadsheet**
     - **[Microsoft Excel](https://support.microsoft.com/en-us/excel)**: spreadsheet app for tracking, analyzing, and visualizing data
 
