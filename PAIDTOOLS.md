@@ -11,8 +11,6 @@
 
 ## Artificial Intelligence
 - **AI Agent**
-    - **[Claude Duet](https://claude.com/product/claude-duet)**: always-on agents that keep working on tasks across your connected apps
-    - **[Meta Muse](https://ai.meta.com/muse/)**: always-on agents that keep working on tasks across your connected apps
     - **[OpenAI Dots](https://openai.com/index/introducing-dots/)**: always-on agents that keep working on tasks across your connected apps
 - **Generative AI**
     - **AI Image Generation**
