@@ -126,7 +126,7 @@
 - [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ): Andrej Karpathy's course building neural networks and GPT from scratch
 - [No Black Box Machine Learning Course](https://www.youtube.com/watch?v=vDDjtwQDw2k): learn ML by coding the algorithms yourself without libraries ([Phase 2](https://www.youtube.com/watch?v=3wwiOSxDAmg))
 - [OpenCV Course - Full Tutorial with Python](https://www.youtube.com/watch?v=oXlwWbU8l2o): computer vision fundamentals with OpenCV
-- [Python + PyTorch + Pygame Reinforcement Learning – Train an AI to Play Snake](https://www.youtube.com/watch?v=L8ypSXwyBds): build a reinforcement learning agent that learns to play Snake
+- [Pygame Reinforcement Learning – Train an AI to Play Snake](https://www.youtube.com/watch?v=L8ypSXwyBds): build a reinforcement learning agent that learns to play Snake
 - [Python TensorFlow for Machine Learning – Neural Network Text Classification](https://www.youtube.com/watch?v=VtRLrQ3Ev-U): text classification with neural networks in TensorFlow
 - [R Programming Tutorial - Learn the Basics of Statistical Computing](https://www.youtube.com/watch?v=_V8eKsto3Ug): beginner course on R for statistics
 - [Seeing Theory](https://seeing-theory.brown.edu/): Brown University's visual introduction to probability and statistics
