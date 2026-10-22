@@ -1,5 +1,3 @@
-# Paid DS/ML/AI Tools
-
 These tools have no free tier or free edition. Freemium tools are in [TOOLS.md](TOOLS.md).
 
 <details>
