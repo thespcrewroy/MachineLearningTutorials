@@ -14,11 +14,8 @@
 
 ## Artificial Intelligence
 - **AI Agent**
-    - **Agentic Browser**
-        - **[Comet](https://www.perplexity.ai/comet)**: Perplexity's AI browser with a built-in agent that browses and completes tasks
-    - **AI Coding Agent**
-        - **[Claude Code](https://www.claude.com/product/claude-code)**: Anthropic's coding agent for performing development tasks
     - **[ChatGPT Agent](https://openai.com/index/introducing-chatgpt-agent/)**: ChatGPT mode that uses its own browser and computer to complete multi-step tasks
+    - **[Comet](https://www.perplexity.ai/comet)**: Perplexity's AI browser with a built-in agent that browses and completes tasks
     - **[Jev](https://docs.typesafe.ai/introduction/quickstart)**: TypeSafe AI's model that returns typed answers and probabilities for fast agent decisions
     - **Multi-Agent Orchestration**
         - **[CrewAI](https://github.com/crewAIInc/crewAI)**: framework for orchestrating role-playing, autonomous AI agents
