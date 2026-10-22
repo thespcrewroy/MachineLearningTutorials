@@ -93,42 +93,14 @@
 * [Artificial Corner (The PyCoach)](https://artificialcorner.com/): Python tips, tutorials, and data science content for all levels
 
 ## Resources
-- [Advanced Computer Vision with Python - Full Course](https://www.youtube.com/watch?v=01sAkU_NvOY): full course on advanced computer vision projects in Python
 - [AI Expert Roadmap](https://github.com/AMAI-GmbH/AI-Expert-Roadmap): step-by-step visual guide to becoming an AI practitioner
-- [All Major Data Mining Techniques Explained With Examples](https://www.youtube.com/watch?v=dUm3ptTQr0Q): video overview of the main data mining techniques
-- [AlphaZero from Scratch – Machine Learning Tutorial](https://www.youtube.com/watch?v=wuSQpLinRB4): build AlphaZero's self-play algorithm step by step in Python
-- [Amazon Web Scraping Using Python | Data Analyst Portfolio Project](https://www.youtube.com/watch?v=HiOtQMcI5wg): scrape Amazon product data with Python for a portfolio project
-- [Andrew Ng Courses](https://www.andrewng.org/courses/): AI pioneer's free courses on machine learning and deep learning
-- [Build AI Apps with ChatGPT, DALL-E, and GPT-4](https://www.youtube.com/watch?v=jlogLBkPZ2A): course on building AI apps with OpenAI's APIs
-- [Build and Deploy Notion Clone](https://www.youtube.com/watch?v=qDunJ0wVIec): full-stack project tutorial for building and deploying a Notion clone with AI features
+- [Andrew Ng Courses](https://www.andrewng.org/courses/): AI pioneer's free courses on machine learning and deep learningon clone with AI features
 - [Carnegie Mellon AI Curriculum](https://www.cs.cmu.edu/bs-in-artificial-intelligence/curriculum): CMU's open AI and machine learning curriculum
-- [Coding With Radu: Self-Driving Car](https://www.youtube.com/playlist?list=PLB0Tybl0UNfYoJE7ZwsBQoDIG4YN9ptyY): build a self-driving car simulation with neural networks from scratch ([Phase 2](https://www.youtube.com/playlist?list=PLB0Tybl0UNfZtY5IQl1aNwcoOPJNtnPEO), [Phase 3](https://www.youtube.com/watch?v=Rs_rAxEsAvI))
-- [Create a Large Language Model from Scratch with Python – Tutorial](https://www.youtube.com/watch?v=UU1WVnMk4E8): build a small LLM step by step in Python
 - [DALL-E 3 Research Paper](https://cdn.openai.com/papers/dall-e-3.pdf): OpenAI's official paper on the DALL-E 3 image generation model
-- [Data Analysis with Python for Excel Users - Full Course](https://www.youtube.com/watch?v=WcDaZ67TVRo): learn Python data analysis coming from Excel
-- [Data Visualization with D3 – Full Course for Beginners (2022)](https://www.youtube.com/watch?v=xkBheRZTkaw): learn D3.js data visualization from scratch
 - [DataCamp](https://www.datacamp.com/): interactive data science and machine learning courses online
-- [Deep Learning for Computer Vision with Python and TensorFlow](https://www.youtube.com/watch?v=IA3WxTTPXqQ): course on computer vision with neural networks in TensorFlow
 - [Deep Learning Specialization (Andrew Ng)](https://www.coursera.org/specializations/deep-learning): DeepLearning.AI's deep learning course series on Coursera
 - [Fast.ai](https://www.fast.ai/): practical deep learning courses taught top-down for coders
-- [Fine Tuning LLM Models – Generative AI Course](https://www.youtube.com/watch?v=iOdFUJiB0Zc): learn how to fine-tune large language models
-- [Generative AI Full Course](https://www.youtube.com/watch?v=mEsleV16qdo): broad course on generative AI models and applications
-- [Google Gemini AI Course for Beginners](https://www.youtube.com/watch?v=DJtX3S7qx2s): build apps with the Gemini API
 - [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/chapter1/1): free course on NLP with transformers and the Hugging Face ecosystem
-- [Industrial-scale Web Scraping with AI & Proxy Networks](https://www.youtube.com/watch?v=qo_fUjb02ns): scraping websites at scale with AI and proxy networks
-- [Keras with TensorFlow Course - Python Deep Learning and Neural Networks](https://www.youtube.com/watch?v=qFJeN9V1ZsI): beginner deep learning course using Keras
-- [Learn AI Engineer Skills For Beginners: OpenAI API + Python](https://www.youtube.com/watch?v=lURxO6NaEcY): build AI apps with the OpenAI API in Python
-- [Learn LangChainJS - Build LLM apps with JavaScript and OpenAI](https://www.youtube.com/watch?v=HSZ_uaif57o): build LLM apps with LangChain.js
-- [Machine Learning Course](https://www.youtube.com/watch?v=NWONeJKn6kc): full beginner machine learning course
-- [Machine Learning for Everybody](https://www.youtube.com/watch?v=i_LwzRVP7bg): beginner-friendly introduction to core ML concepts and algorithms
-- [MarketWatch](https://www.marketwatch.com/): financial news, stock market data, and business analysis
-- [Neural Networks (3Blue1Brown)](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi): interactive visual introduction to neural networks and deep learning
-- [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ): Andrej Karpathy's course building neural networks and GPT from scratch
-- [No Black Box Machine Learning Course](https://www.youtube.com/watch?v=vDDjtwQDw2k): learn ML by coding the algorithms yourself without libraries ([Phase 2](https://www.youtube.com/watch?v=3wwiOSxDAmg))
-- [OpenCV Course - Full Tutorial with Python](https://www.youtube.com/watch?v=oXlwWbU8l2o): computer vision fundamentals with OpenCV
-- [Pygame Reinforcement Learning – Train an AI to Play Snake](https://www.youtube.com/watch?v=L8ypSXwyBds): build a reinforcement learning agent that learns to play Snake
-- [Python TensorFlow for Machine Learning – Neural Network Text Classification](https://www.youtube.com/watch?v=VtRLrQ3Ev-U): text classification with neural networks in TensorFlow
-- [R Programming Tutorial - Learn the Basics of Statistical Computing](https://www.youtube.com/watch?v=_V8eKsto3Ug): beginner course on R for statistics
 - [Seeing Theory](https://seeing-theory.brown.edu/): Brown University's visual introduction to probability and statistics
 - [Stable Diffusion Crash Course for Beginners](https://www.youtube.com/watch?v=dMkiOex_cKU): generate and customize images with Stable Diffusion
 - [Stock Price Prediction Using Python & Machine Learning](https://www.youtube.com/watch?v=QIUxPv5PJOY): predict stock prices with an LSTM neural network in Python
