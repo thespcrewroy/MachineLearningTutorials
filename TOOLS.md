@@ -1,5 +1,3 @@
-# DS/ML/AI Tutorials
-
 <details>
 <summary>📖 Table of Contents</summary>
 <br />
