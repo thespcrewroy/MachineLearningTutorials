@@ -2,9 +2,8 @@
 - **AI Agent**: an AI system that plans and takes multi-step actions with tools to complete a goal
     - **Agentic Browser**: a web browser with a built-in AI agent that can navigate and act on pages for you
     - **AI Coding Agent**: an AI agent that plans, writes, tests, and submits code changes with limited supervision
-    - **Multi-Agent Orchestration**: coordinating several specialized AI agents that divide and hand off work
-    - **Tool Use**: letting a model call external functions, APIs, or code to act beyond generating text
-        - **MCP (Model Context Protocol)**: an open standard for connecting AI models to external tools and data sources
+    - **MCP (Model Context Protocol)**: an open standard for connecting AI models to external tools and data sources
+    - **Multi-Agent Orchestration**: coordinating several specialized AI agents that divide and hand off work        
 - **AI Alignment**: making AI systems behave according to human intentions and values
 - **AI Coding Assistant**: an editor plugin that suggests and completes code using AI
 - **AI Research Assistant**: an AI tool that searches, reads, and summarizes sources to answer questions
