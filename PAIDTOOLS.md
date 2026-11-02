@@ -5,6 +5,7 @@
 - [Artificial Intelligence](#artificial-intelligence)
 - [Big Data](#big-data)
 - [Business Analytics](#business-analytics)
+- [Data Analytics](#data-analytics)
 - [Mathematics](#mathematics)
 
 </details>
