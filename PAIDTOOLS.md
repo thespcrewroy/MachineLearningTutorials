@@ -26,6 +26,10 @@
 - **Market Research**
     - **[Gartner](https://www.gartner.com/)**: global research and advisory firm that helps organizations make data-driven decisions
 
+## Data Analytics
+- **Observability**
+    - **[Dynatrace](https://docs.dynatrace.com/)**: for monitoring application performance, infrastructure, logs, traces, and system health 
+
 ## Mathematics
 - **[Mathematica](https://www.wolfram.com/mathematica/)**: Wolfram's technical computing software for symbolic and numeric math
 
