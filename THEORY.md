@@ -20,6 +20,7 @@
     - **AI Voice Generation**: synthesizing lifelike speech or cloning voices from text
 - **LLM (Large Language Model)**: a neural network trained on huge text corpora to understand and generate language
     - **AI Chatbot**: a conversational interface for chatting with an LLM
+    - **Distillation:** training a smaller student model to imitate the outputs or behavior of a larger teacher model
     - **Fine-Tuning**: further training a pretrained model on task-specific data
         - **LoRA (Low-Rank Adaptation)**: a parameter-efficient fine-tuning method that trains small low-rank matrices
     - **Inference**: running a trained model to generate predictions or outputs
