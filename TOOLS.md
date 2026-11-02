@@ -115,6 +115,7 @@
 ## Data Analytics
 - **Observability**
     - **[Datadog](https://docs.datadoghq.com/)**: monitoring platform for databases, servers, applications, and logs
+    - **[Dynatrace](https://docs.dynatrace.com/)**: for monitoring application performance, infrastructure, logs, traces, and system health
     - **[Grafana](https://grafana.com/docs/)**: open-source dashboards for visualizing and alerting on metrics, logs, and traces
 - **Web Analytics**
     - **[Google Analytics](https://support.google.com/analytics)**: tracks and reports website traffic, user behavior, and marketing performance
