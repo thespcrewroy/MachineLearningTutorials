@@ -18,9 +18,9 @@
     - **[Claude Duet](https://claude.com/product/claude-duet)**: always-on agents that keep working on tasks across your connected apps
     - **[Comet](https://www.perplexity.ai/comet)**: Perplexity's AI browser with a built-in agent that browses and completes tasks
     - **[Jev](https://docs.typesafe.ai/introduction/quickstart)**: TypeSafe AI's model that returns typed answers and probabilities for fast agent decisions
+    - **[Meta Muse](https://ai.meta.com/muse/)**: always-on agents that keep working on tasks across your connected apps
     - **Multi-Agent Orchestration**
         - **[CrewAI](https://github.com/crewAIInc/crewAI)**: framework for orchestrating role-playing, autonomous AI agents
-    - **[Meta Muse](https://ai.meta.com/muse/)**: always-on agents that keep working on tasks across your connected apps
     - **[n8n](https://docs.n8n.io/)**: open-source workflow automation platform for building AI agents and integrations
 - **AI Coding Assistant**
     - **[GitHub Copilot](https://docs.github.com/en/copilot)**: AI code completion and chat for code editors and IDEs
@@ -36,6 +36,8 @@
     - **[GeoSpy](https://geospy.ai/)**: AI-powered tool that identifies the geographic location of photos
     - **[MediaPipe](https://ai.google.dev/edge/mediapipe)**: Google's on-device ML solutions for vision tasks like face, hand, and pose tracking
     - **[OpenCV](https://docs.opencv.org/)**: open-source library for real-time computer vision
+    - **[Pillow](https://pillow.readthedocs.io/)**: Python imaging library for opening, editing, and saving images
+    - **[scikit-image](https://scikit-image.org/docs/stable/)**: Python library of image processing algorithms like segmentation
 - **Deepfake**
     - **[Roop Unleashed](https://github.com/C0untFloyd/roop-unleashed)**: open-source face-swapping tool for images and video
 - **Generative AI**
@@ -89,6 +91,11 @@
         - **[Qwen](https://qwen.ai/)**: Alibaba's open-weight LLM family
 - **Model Hub**
     - **[Hugging Face](https://huggingface.co/docs)**: the flagship community for sharing models, datasets, and AI demos
+- **NLP (Natural Language Processing)**
+    - **[NLTK (Natural Language Toolkit)](https://www.nltk.org/)**: Python library for tokenizing, tagging, and stemming text
+- **RAG (Retrieval-Augmented Generation)**
+    - **Vector Embedding**
+        - **[Sentence Transformers](https://sbert.net/)**: Python library for text embeddings from pretrained models
 
 ## Big Data
 - **Data Lakehouse**
@@ -139,10 +146,13 @@
     - **[Plotly](https://plotly.com/python/)**: interactive, browser-based graphing library for Python
 - **[Kaggle](https://www.kaggle.com/)**: data science platform with datasets, notebooks, competitions, and courses
 - **[Python](https://docs.python.org/3/)**: the most widely used language for data science and machine learning
+    - **[Anaconda](https://www.anaconda.com/docs/)**: Python distribution with the conda package and environment manager
     - **[NumPy](https://numpy.org/doc/)**: fast multidimensional arrays and numerical computing for Python
     - **[pandas](https://pandas.pydata.org/docs/)**: DataFrames for loading, cleaning, and analyzing tabular data
     - **[SciPy](https://docs.scipy.org/doc/scipy/)**: scientific computing routines for optimization, statistics, and signal processing
     - **[uv](https://docs.astral.sh/uv/)**: extremely fast Python package and project manager
+- **Regex (Regular Expression)**
+    - **[regex101](https://regex101.com/)**: online tester that explains and debugs regular expressions
 - **Statistical Computing**
     - **[R](https://www.r-project.org/)**: programming language for statistical computing and graphics
     - **[SAS](https://www.sas.com/en_us/software/on-demand-for-academics.html)**: analytics software suite, free for learners through SAS OnDemand for Academics
@@ -150,6 +160,11 @@
     - **[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)**: Python package for parsing HTML and XML
 
 ## Machine Learning
+- **Benchmark Dataset**
+    - **[CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)**: 60,000 small color images in 10 classes for image classification
+    - **[MNIST](https://huggingface.co/datasets/ylecun/mnist)**: 70,000 handwritten digit images, the classic starter dataset
+- **Class Imbalance**
+    - **[imbalanced-learn](https://imbalanced-learn.org/stable/)**: scikit-learn-compatible resampling tools, including SMOTE
 - **Deep Learning**
     - **Neural Network**
         - **Transformer**
@@ -163,6 +178,7 @@
         - **[Jenetics](https://jenetics.io/)**: a Java library for genetic algorithms and evolutionary optimization
 - **ML Framework**
     - **[PyTorch](https://pytorch.org/docs/)**: Meta's deep learning framework, the standard for research and production
+        - **[torchvision](https://docs.pytorch.org/vision/stable/)**: PyTorch's image datasets, pretrained models, and transforms
     - **[scikit-learn](https://scikit-learn.org/stable/)**: Python library for classic machine learning algorithms and preprocessing
     - **[TensorFlow](https://www.tensorflow.org/learn)**: Google's machine learning and deep learning framework
         - **[Keras](https://keras.io/)**: a high-level deep learning API that runs on JAX, TensorFlow, or PyTorch
@@ -174,6 +190,11 @@
     - **Experiment Tracking**
         - **[MLflow](https://mlflow.org/docs/latest/)**: open-source platform for tracking experiments and managing the ML model lifecycle
         - **[Weights & Biases](https://docs.wandb.ai/)**: platform for tracking experiments, comparing runs, and managing models
+    - **Model Deployment**
+        - **[Flask](https://flask.palletsprojects.com/)**: lightweight Python web framework often used to serve ML models
+- **Unsupervised Learning**
+    - **Association Rule Mining**
+        - **[mlxtend](https://rasbt.github.io/mlxtend/)**: ML extensions with Apriori, association rules, and plotting helpers
 
 ## Mathematics
 - **[Wolfram Alpha](https://www.wolframalpha.com/)**: computational knowledge engine that solves math step by step
