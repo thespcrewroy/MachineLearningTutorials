@@ -191,6 +191,7 @@
     - **[Intel Image Classification](https://www.kaggle.com/datasets/puneet6060/intel-image-classification)**: 25,000 scene images in 6 classes like forest and street
     - **[MNIST](https://huggingface.co/datasets/ylecun/mnist)**: 70,000 handwritten digit images, the classic starter dataset
     - **[Speech Commands](https://huggingface.co/datasets/google/speech_commands)**: one-second clips of spoken words for keyword spotting
+    - **[UCI Machine Learning Repository](https://archive.ics.uci.edu/)**: searchable archive of classic datasets like Heart Disease and Breast Cancer
     - **[UrbanSound8K](https://urbansounddataset.weebly.com/urbansound8k.html)**: 8,732 labeled city sound clips like sirens, drills, and dog barks
 - **Class Imbalance**
     - **[imbalanced-learn](https://imbalanced-learn.org/stable/)**: scikit-learn-compatible resampling tools, including SMOTE
@@ -223,6 +224,9 @@
         - **[Weights & Biases](https://docs.wandb.ai/)**: platform for tracking experiments, comparing runs, and managing models
     - **Model Deployment**
         - **[Flask](https://flask.palletsprojects.com/)**: lightweight Python web framework often used to serve ML models
+        - **Model Serialization**
+            - **[joblib](https://joblib.readthedocs.io/)**: saves and loads scikit-learn models and large NumPy arrays efficiently
+            - **[`pickle`](https://docs.python.org/3/library/pickle.html)**: Python's built-in module for saving objects, including models, to files
 - **Model Evaluation**
     - **[Hugging Face Evaluate](https://huggingface.co/docs/evaluate)**: library of standard metrics for evaluating ML models
 - **Reinforcement Learning**
