@@ -7,6 +7,7 @@
 - [Business Analytics](#business-analytics)
 - [Data Analytics](#data-analytics)
 - [Data Science](#data-science)
+- [IoT (Internet of Things)](#iot-internet-of-things)
 - [Machine Learning](#machine-learning)
 - [Mathematics](#mathematics)
 
@@ -18,6 +19,8 @@
     - **[Claude Duet](https://claude.com/product/claude-duet)**: always-on agents that keep working on tasks across your connected apps
     - **[Comet](https://www.perplexity.ai/comet)**: Perplexity's AI browser with a built-in agent that browses and completes tasks
     - **[Jev](https://docs.typesafe.ai/introduction/quickstart)**: TypeSafe AI's model that returns typed answers and probabilities for fast agent decisions
+    - **MCP (Model Context Protocol)**
+        - **[MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)**: official Python SDK for building MCP servers and clients
     - **[Meta Muse](https://ai.meta.com/muse/)**: always-on agents that keep working on tasks across your connected apps
     - **Multi-Agent Orchestration**
         - **[CrewAI](https://github.com/crewAIInc/crewAI)**: framework for orchestrating role-playing, autonomous AI agents
@@ -32,6 +35,8 @@
 - **AI Tutor**
     - **[LearnYourWay](https://learnyourway.withgoogle.com/)**: Google study tool that helps you learn concepts instead of just memorizing
 - **[AlphaGeometry](https://github.com/google-deepmind/alphageometry)**: DeepMind's system that solves olympiad-level geometry problems
+- **Audio Analysis**
+    - **[librosa](https://librosa.org/doc/latest/)**: Python package for music and audio analysis and feature extraction
 - **Computer Vision**
     - **[GeoSpy](https://geospy.ai/)**: AI-powered tool that identifies the geographic location of photos
     - **[MediaPipe](https://ai.google.dev/edge/mediapipe)**: Google's on-device ML solutions for vision tasks like face, hand, and pose tracking
@@ -72,11 +77,10 @@
         - **[Gemini](https://gemini.google.com/app)**: Google's AI assistant (formerly Bard)
         - **[Grok](https://grok.com/)**: xAI's AI assistant integrated with X
         - **[Microsoft Copilot](https://copilot.microsoft.com/)**: Microsoft's AI assistant across Windows, Edge, and Microsoft 365
-    - **Fine-Tuning**
-        - **[NVIDIA NeMo](https://docs.nvidia.com/nemo-framework/)**: NVIDIA's framework for building, customizing, and deploying generative AI models
     - **Inference**
         - **Local LLM Inference**
             - **[llama.cpp](https://github.com/ggml-org/llama.cpp)**: runs LLMs locally in C/C++ on CPUs and consumer GPUs
+            - **[LM Studio](https://lmstudio.ai/docs)**: desktop app for running local LLMs, with MCP tool support
             - **[Ollama](https://ollama.com/)**: downloads and runs open-weight models locally with one command
         - **[NVIDIA Triton Inference Server](https://github.com/triton-inference-server/server)**: open-source server for deploying models at scale
     - **LLM Evaluation**
@@ -91,6 +95,7 @@
         - **[Qwen](https://qwen.ai/)**: Alibaba's open-weight LLM family
 - **Model Hub**
     - **[Hugging Face](https://huggingface.co/docs)**: the flagship community for sharing models, datasets, and AI demos
+        - **[Hugging Face Datasets](https://huggingface.co/docs/datasets)**: library for loading and processing datasets from the Hub
 - **NLP (Natural Language Processing)**
     - **[NLTK (Natural Language Toolkit)](https://www.nltk.org/)**: Python library for tokenizing, tagging, and stemming text
 - **RAG (Retrieval-Augmented Generation)**
@@ -136,6 +141,13 @@
     - **[JupyterLab](https://jupyterlab.readthedocs.io/)**: web-based environment for notebooks, code, and data
 - **Data App**
     - **[Streamlit](https://docs.streamlit.io/)**: turns Python scripts into shareable data and ML web apps
+- **Data Integration**
+    - **API (Application Programming Interface)**
+        - **[Alpha Vantage](https://www.alphavantage.co/documentation/)**: stock and financial market data API with a free tier
+        - **[Postman](https://learning.postman.com/docs/)**: app for building, testing, and documenting APIs
+        - **[Requests](https://requests.readthedocs.io/)**: simple Python HTTP library for calling web APIs
+    - **SQL (Structured Query Language)**
+        - **[SQLite](https://sqlite.org/docs.html)**: lightweight file-based SQL database built into Python
 - **Data Mining**
     - **[KNIME](https://docs.knime.com/)**: open-source visual platform for building analyses of any complexity
     - **[RapidMiner (Altair AI Studio)](https://altair.com/altair-rapidminer)**: visual platform for data science and data mining
@@ -159,10 +171,19 @@
 - **Web Scraping**
     - **[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)**: Python package for parsing HTML and XML
 
+## IoT (Internet of Things)
+- **MQTT (Message Queuing Telemetry Transport)**
+    - **[Eclipse Paho MQTT](https://github.com/eclipse-paho/paho.mqtt.python)**: Python client for publishing and subscribing to MQTT topics
+    - **MQTT Broker**
+        - **[Eclipse Mosquitto](https://mosquitto.org/documentation/)**: open-source MQTT broker, with a free public test server
+
 ## Machine Learning
 - **Benchmark Dataset**
     - **[CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)**: 60,000 small color images in 10 classes for image classification
+    - **[Intel Image Classification](https://www.kaggle.com/datasets/puneet6060/intel-image-classification)**: 25,000 scene images in 6 classes like forest and street
     - **[MNIST](https://huggingface.co/datasets/ylecun/mnist)**: 70,000 handwritten digit images, the classic starter dataset
+    - **[Speech Commands](https://huggingface.co/datasets/google/speech_commands)**: one-second clips of spoken words for keyword spotting
+    - **[UrbanSound8K](https://urbansounddataset.weebly.com/urbansound8k.html)**: 8,732 labeled city sound clips like sirens, drills, and dog barks
 - **Class Imbalance**
     - **[imbalanced-learn](https://imbalanced-learn.org/stable/)**: scikit-learn-compatible resampling tools, including SMOTE
 - **Deep Learning**
@@ -178,6 +199,8 @@
         - **[Jenetics](https://jenetics.io/)**: a Java library for genetic algorithms and evolutionary optimization
 - **ML Framework**
     - **[PyTorch](https://pytorch.org/docs/)**: Meta's deep learning framework, the standard for research and production
+        - **[torchaudio](https://docs.pytorch.org/audio/stable/)**: PyTorch's audio loading, transforms, and datasets
+        - **[torchinfo](https://github.com/TylerYep/torchinfo)**: prints a PyTorch model's layers, output shapes, and parameter counts
         - **[torchvision](https://docs.pytorch.org/vision/stable/)**: PyTorch's image datasets, pretrained models, and transforms
     - **[scikit-learn](https://scikit-learn.org/stable/)**: Python library for classic machine learning algorithms and preprocessing
     - **[TensorFlow](https://www.tensorflow.org/learn)**: Google's machine learning and deep learning framework
@@ -192,6 +215,15 @@
         - **[Weights & Biases](https://docs.wandb.ai/)**: platform for tracking experiments, comparing runs, and managing models
     - **Model Deployment**
         - **[Flask](https://flask.palletsprojects.com/)**: lightweight Python web framework often used to serve ML models
+- **Model Evaluation**
+    - **[Hugging Face Evaluate](https://huggingface.co/docs/evaluate)**: library of standard metrics for evaluating ML models
+- **Reinforcement Learning**
+    - **RL Environment**
+        - **[Gymnasium](https://gymnasium.farama.org/)**: standard API and suite of RL environments, successor to OpenAI Gym
+    - **[Stable-Baselines3](https://stable-baselines3.readthedocs.io/)**: reliable PyTorch implementations of RL algorithms like PPO and DQN
+- **Transfer Learning**
+    - **Fine-Tuning**
+        - **[NVIDIA NeMo](https://docs.nvidia.com/nemo-framework/)**: NVIDIA's framework for building, customizing, and deploying generative AI models
 - **Unsupervised Learning**
     - **Association Rule Mining**
         - **[mlxtend](https://rasbt.github.io/mlxtend/)**: ML extensions with Apriori, association rules, and plotting helpers
