@@ -29,7 +29,7 @@
 
 ## Data Analytics
 - **Observability**
-    - **[Dynatrace](https://docs.dynatrace.com/)**: for monitoring application performance, infrastructure, logs, traces, and system health 
+    - **[Dynatrace](https://docs.dynatrace.com/)**: monitors application performance, infrastructure, logs, traces, and system health
 
 ## Mathematics
 - **[Mathematica](https://www.wolfram.com/mathematica/)**: Wolfram's technical computing software for symbolic and numeric math
