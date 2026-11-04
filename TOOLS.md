@@ -146,9 +146,14 @@
 - **Data Integration**
     - **API (Application Programming Interface)**
         - **[Alpha Vantage](https://www.alphavantage.co/documentation/)**: stock and financial market data API with a free tier
+        - **[NewsAPI](https://newsapi.org/docs)**: news headlines and articles API with a free developer tier
+        - **[Open-Meteo](https://open-meteo.com/en/docs)**: free weather forecast and history API, no key required
+        - **[OpenSky Network API](https://openskynetwork.github.io/opensky-api/)**: live and historical flight-tracking data, free for research
         - **[Postman](https://learning.postman.com/docs/)**: app for building, testing, and documenting APIs
         - **[Requests](https://requests.readthedocs.io/)**: simple Python HTTP library for calling web APIs
+        - **[TheSportsDB](https://www.thesportsdb.com/)**: crowd-sourced sports data and artwork API with a free key
     - **SQL (Structured Query Language)**
+        - **[SQLAlchemy](https://docs.sqlalchemy.org/)**: Python SQL toolkit and ORM that lets pandas read and write many databases
         - **[SQLite](https://sqlite.org/docs.html)**: lightweight file-based SQL database built into Python
 - **Data Mining**
     - **[KNIME](https://docs.knime.com/)**: open-source visual platform for building analyses of any complexity
@@ -161,6 +166,7 @@
 - **[Kaggle](https://www.kaggle.com/)**: data science platform with datasets, notebooks, competitions, and courses
 - **[Python](https://docs.python.org/3/)**: the most widely used language for data science and machine learning
     - **[Anaconda](https://www.anaconda.com/docs/)**: Python distribution with the conda package and environment manager
+        - **[Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main)**: minimal installer with just conda and Python
     - **[NumPy](https://numpy.org/doc/)**: fast multidimensional arrays and numerical computing for Python
     - **[pandas](https://pandas.pydata.org/docs/)**: DataFrames for loading, cleaning, and analyzing tabular data
     - **[SciPy](https://docs.scipy.org/doc/scipy/)**: scientific computing routines for optimization, statistics, and signal processing
