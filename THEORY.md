@@ -85,12 +85,17 @@
     - **Outlier Detection**: finding data points that differ sharply from the rest of the data
 - **Data Integration**: combining data from different sources into one unified dataset
     - **API (Application Programming Interface)**: lets programs request data or services from each other
+    - **JSON (JavaScript Object Notation)**: a text format of nested key-value data, the usual format of web API responses
     - **SQL (Structured Query Language)**: the standard language for querying and managing relational databases
 - **Data Mining**: extracting and discovering patterns in large datasets
 - **Data Preprocessing**: transforming raw data into a clean, consistent format for analysis or modeling
+    - **Data Reshaping**: converting tables between wide and long form, e.g. by melting or pivoting
+    - **Tidy Data**: a layout where each row is one observation and each column is one variable
 - **Data Visualization**: representing data graphically with charts, plots, and interactive dashboards
+- **EDA (Exploratory Data Analysis)**: summarizing and plotting a dataset to spot patterns, outliers, and problems before modeling
 - **Regex (Regular Expression)**: a pattern language for searching, matching, and extracting text
 - **Statistical Computing**: using programming languages and software to perform statistical analysis
+- **Vectorization**: applying an operation to a whole array or column at once instead of looping
 - **Web Scraping**: automatically extracting data from websites
 
 ## IoT (Internet of Things)
@@ -218,3 +223,4 @@
     - **Multivariate Analysis**: analyzing several variables at once to understand how they relate
     - **Statistical Inference**: drawing conclusions about a population from a sample
     - **Time Series Analysis**: analyzing data points ordered in time to find trends and forecast values
+        - **Rolling Window**: computing a statistic over a sliding window of recent points, like a moving average
