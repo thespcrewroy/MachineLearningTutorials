@@ -252,7 +252,7 @@
         - **[NVIDIA NeMo](https://docs.nvidia.com/nemo-framework/)**: NVIDIA's framework for building, customizing, and deploying generative AI models
 - **Unsupervised Learning**
     - **Association Rule Mining**
-        - **[mlxtend](https://rasbt.github.io/mlxtend/)**: ML extensions with Apriori, association rules, and plotting helpers
+        - **[mlxtend](https://rasbt.github.io/mlxtend/)**: ML extensions with Apriori, FP-Growth, association rules, and plotting helpers
 
 ## Mathematics
 - **[Wolfram Alpha](https://www.wolframalpha.com/)**: computational knowledge engine that solves math step by step
