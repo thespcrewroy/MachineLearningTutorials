@@ -1,13 +1,21 @@
 ## Artificial Intelligence
 - **AI Agent**: an AI system that plans and takes multi-step actions with tools to complete a goal
     - **Agentic Browser**: a web browser with a built-in AI agent that can navigate and act on pages for you
+    - **Agentic Workflow**: a fixed sequence of LLM and tool steps where code, not the model, controls the flow
     - **AI Coding Agent**: an AI agent that plans, writes, tests, and submits code changes with limited supervision
     - **MCP (Model Context Protocol)**: an open standard for connecting AI models to external tools and data sources
     - **Multi-Agent Orchestration**: coordinating several specialized AI agents that divide and hand off work
+    - **Tool Calling**: a model requesting a function with structured arguments, which code then runs
 - **AI Alignment**: making AI systems behave according to human intentions and values
 - **AI Coding Assistant**: an editor plugin that suggests and completes code using AI
+- **AI Guardrails**: limits on what an AI system may do or say, like allowed tools, step caps, or output checks
 - **AI Research Assistant**: an AI tool that searches, reads, and summarizes sources to answer questions
 - **AI Tutor**: an AI tool that adapts explanations and practice to help a learner understand material
+- **Audio Analysis**: teaching computers to interpret sound such as speech, music, or environmental noise
+    - **MFCC (Mel-Frequency Cepstral Coefficients)**: compact features that summarize a sound's spectrum
+    - **Spectrogram**: a picture of how a sound's frequencies change over time
+        - **Mel Spectrogram**: a spectrogram rescaled to the Mel scale to match how humans hear pitch
+    - **Speech Recognition**: converting spoken audio into text
 - **Computer Vision**: teaching computers to interpret and understand images and video
     - **Image Classification**: assigning one label to a whole image, such as "cat" or "truck"
     - **Image Segmentation**: splitting an image into regions to separate objects from the background
@@ -23,8 +31,7 @@
 - **LLM (Large Language Model)**: a neural network trained on huge text corpora to understand and generate language
     - **AI Chatbot**: a conversational interface for chatting with an LLM
     - **Distillation**: training a smaller student model to imitate the outputs or behavior of a larger teacher model
-    - **Fine-Tuning**: further training a pretrained model on task-specific data
-        - **LoRA (Low-Rank Adaptation)**: a parameter-efficient fine-tuning method that trains small low-rank matrices
+    - **Hallucination**: when a model confidently states false or made-up information
     - **Inference**: running a trained model to generate predictions or outputs
         - **Local LLM Inference**: running a language model on your own hardware instead of through a hosted API
     - **LLM Evaluation**: measuring model quality, accuracy, latency, and safety with repeatable tests
@@ -32,6 +39,7 @@
     - **Open-Weight Model**: a model whose trained weights are publicly released for anyone to run or fine-tune
     - **Pretraining**: training a model from scratch on a large unlabeled corpus
 - **Model Hub**: a platform for sharing and downloading pretrained models, datasets, and demos
+- **Multimodal Model**: a model that handles more than one type of data, such as images and text
 - **NLP (Natural Language Processing)**: teaching computers to understand, process, and generate human language
     - **Bag of Words**: represents text by its word counts, ignoring word order
     - **Lemmatization**: reducing words to their dictionary form, e.g. "better" → "good"
@@ -44,7 +52,11 @@
     - **Tokenization**: splitting text into units such as words, subwords, or sentences
 - **Prompt Engineering**: designing and refining model inputs to get accurate, useful outputs
 - **RAG (Retrieval-Augmented Generation)**: improving LLM answers by retrieving relevant documents and adding them to the prompt
+    - **Chunking**: splitting documents into smaller passages before embedding them for retrieval
+    - **Re-Ranking**: reordering retrieved passages with a stronger model so the best come first
+    - **Vector Database**: a database that stores embeddings and quickly finds those nearest a query
     - **Vector Embedding**: a numeric vector that represents the meaning of text, images, or other data
+        - **Cosine Similarity**: measures how alike two vectors are by the angle between them
 
 ## Big Data
 - **Data Lakehouse**: combines a data lake's cheap, flexible storage with a warehouse's structured querying
@@ -71,12 +83,22 @@
 - **Data Cleaning**: fixing incorrect, corrupted, duplicate, or incomplete data
     - **Imputation**: filling in missing values with estimates such as the mean or median
     - **Outlier Detection**: finding data points that differ sharply from the rest of the data
+- **Data Integration**: combining data from different sources into one unified dataset
+    - **API (Application Programming Interface)**: lets programs request data or services from each other
+    - **SQL (Structured Query Language)**: the standard language for querying and managing relational databases
 - **Data Mining**: extracting and discovering patterns in large datasets
 - **Data Preprocessing**: transforming raw data into a clean, consistent format for analysis or modeling
 - **Data Visualization**: representing data graphically with charts, plots, and interactive dashboards
 - **Regex (Regular Expression)**: a pattern language for searching, matching, and extracting text
 - **Statistical Computing**: using programming languages and software to perform statistical analysis
 - **Web Scraping**: automatically extracting data from websites
+
+## IoT (Internet of Things)
+- **Digital Twin**: a virtual model of a physical system kept in sync with its real-time data
+- **IIoT (Industrial Internet of Things)**: connected sensors and machines in factories, plants, and other industry
+- **MQTT (Message Queuing Telemetry Transport)**: a lightweight publish-subscribe messaging protocol for devices
+    - **MQTT Broker**: the server that receives published messages and routes them to subscribers
+- **PID (Proportional-Integral-Derivative) Controller**: a feedback controller that steers a system toward a setpoint
 
 ## Machine Learning
 - **AutoML (Automated Machine Learning)**: automating model selection, feature engineering, and hyperparameter tuning
@@ -86,16 +108,23 @@
     - **Underfitting**: when a model is too simple to capture the patterns in its data
 - **Class Imbalance**: when one class far outnumbers the others, biasing a classifier toward it
     - **SMOTE (Synthetic Minority Over-sampling Technique)**: creates synthetic minority-class examples
+- **Data Augmentation**: enlarging a training set with altered copies, like flipped images or reworded text
 - **Deep Learning**: machine learning with multi-layer neural networks that learn features directly from data
     - **Neural Network**: layers of connected nodes, loosely inspired by the brain, that learn patterns from data
         - **Activation Function**: adds non-linearity to a neuron's output, e.g. ReLU or sigmoid
+        - **Autoencoder**: a network that learns to compress and rebuild its input, often to spot anomalies
         - **Backpropagation**: computing error gradients layer by layer to update a neural network's weights
+            - **Automatic Differentiation**: computing exact derivatives of code automatically, as PyTorch does
         - **CNN (Convolutional Neural Network)**: a neural network that uses convolution filters to learn spatial patterns in images
             - **ResNet (Residual Network)**: a CNN with skip connections that make very deep networks trainable
+            - **VGG (Visual Geometry Group Network)**: a simple, deep CNN widely used as a pretrained backbone
         - **Perceptron**: a single artificial neuron that learns a linear decision boundary
+        - **PINN (Physics-Informed Neural Network)**: a network whose loss also enforces known physics equations
         - **RNN (Recurrent Neural Network)**: a neural network with loops that processes sequences like text or time series
             - **LSTM (Long Short-Term Memory)**: an RNN with gated memory cells for long-range patterns
         - **Transformer**: a neural network architecture built on self-attention that underpins modern LLMs
+            - **Attention Mechanism**: lets each token weigh how relevant every other token is to it
+            - **ViT (Vision Transformer)**: a transformer that classifies images by treating patches as tokens
 - **Ensemble Learning**: combining multiple models to get better predictions than any single one
     - **Bagging**: trains models on random subsets of the data and averages their predictions
         - **Random Forest**: an ensemble of decision trees trained with bagging on random subsets of features
@@ -129,7 +158,16 @@
     - **L1 Regularization (Lasso)**: adds the absolute value of weights as a penalty, which can shrink some weights to zero
     - **L2 Regularization (Ridge)**: adds the squared value of weights as a penalty, which keeps all weights small
 - **Reinforcement Learning**: training an agent to take actions that maximize rewards through trial and error
+    - **Actor-Critic**: pairs a policy network that picks actions with a value network that scores them
+        - **PPO (Proximal Policy Optimization)**: an actor-critic method that keeps each policy update small
     - **AlphaZero**: DeepMind's self-play algorithm that mastered chess, shogi, and Go using tree search and neural networks
+    - **Bellman Equation**: defines a state's value as its reward plus the discounted value of the next state
+    - **Policy**: the strategy an RL agent uses to choose an action in each state
+        - **Epsilon-Greedy Policy**: takes the best-known action but explores randomly with probability ε
+    - **Q-Learning**: learns a table of how valuable each action is in each state
+        - **DQN (Deep Q-Network)**: Q-learning that swaps the table for a neural network
+            - **Experience Replay**: training on random batches of stored past transitions to stabilize learning
+    - **RL Environment**: a simulated world that an RL agent observes, acts in, and gets rewards from
 - **Supervised Learning**: training models on labeled data to predict outputs from inputs
     - **Decision Tree**: a model that predicts by splitting data on feature values in a tree of if-then rules
         - **Information Gain**: the drop in entropy from a split, used to pick the feature to split on
@@ -140,10 +178,18 @@
     - **Logistic Regression**: predicts the probability of a class using a logistic (sigmoid) function
     - **Naive Bayes Classifier**: a probabilistic classifier that applies Bayes' theorem assuming independent features
     - **SVM (Support Vector Machine)**: finds the boundary that separates classes with the widest margin
+- **Transfer Learning**: reusing a model trained on one task as the starting point for another
+    - **Feature Extraction**: freezing a pretrained model and training only a new output layer
+    - **Fine-Tuning**: further training a pretrained model on task-specific data
+        - **LoRA (Low-Rank Adaptation)**: a parameter-efficient fine-tuning method that trains small low-rank matrices
 - **Unsupervised Learning**: finding patterns and structure in unlabeled data
+    - **Anomaly Detection**: finding rare points or events that deviate from normal behavior
+        - **Gaussian Anomaly Detection**: flags points that are unlikely under a Gaussian fit to normal data
+        - **Isolation Forest**: isolates anomalies with random splits, since outliers need fewer splits
     - **Association Rule Mining**: finding if-then rules between items that often occur together
         - **Apriori**: finds frequent itemsets to build association rules, as in market basket analysis
     - **Clustering**: grouping similar data points together without predefined labels
+        - **DBSCAN**: density-based clustering that labels points in sparse regions as noise
         - **Elbow Method**: picking k where adding more clusters stops reducing error much
         - **Hierarchical Clustering**: builds a tree of nested clusters by repeatedly merging or splitting groups
         - **K-Means**: partitions data into k clusters by assigning points to the nearest cluster center
@@ -163,7 +209,9 @@
 - **Linear Algebra**: the mathematics of vectors, matrices, and linear transformations
 - **Linear Optimization**: finding the best outcome of a linear objective subject to linear constraints
 - **Numerical Analysis**: algorithms for approximating mathematical solutions on computers
+    - **RK4 (Fourth-Order Runge-Kutta)**: steps through a differential equation's solution with high accuracy
 - **Probability**: the mathematics of uncertainty and how likely events are
+    - **Normal (Gaussian) Distribution**: the bell-shaped distribution defined by a mean and standard deviation
 - **Real Analysis**: the rigorous study of real numbers, limits, continuity, and convergence
 - **Statistics**: collecting, analyzing, and interpreting data to draw conclusions
     - **Bayesian Statistics**: updating the probability of a hypothesis as new evidence arrives
