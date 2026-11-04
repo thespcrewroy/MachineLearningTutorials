@@ -15,16 +15,18 @@
 
 ## Artificial Intelligence
 - **AI Agent**
+    - **Agentic Browser**
+        - **[Comet](https://www.perplexity.ai/comet)**: Perplexity's AI browser with a built-in agent that browses and completes tasks
+    - **Agentic Workflow**
+        - **[n8n](https://docs.n8n.io/)**: open-source workflow automation platform for building AI agents and integrations
     - **[ChatGPT Agent](https://openai.com/index/introducing-chatgpt-agent/)**: ChatGPT mode that uses its own browser and computer to complete multi-step tasks
     - **[Claude Duet](https://claude.com/product/claude-duet)**: always-on agents that keep working on tasks across your connected apps
-    - **[Comet](https://www.perplexity.ai/comet)**: Perplexity's AI browser with a built-in agent that browses and completes tasks
     - **[Jev](https://docs.typesafe.ai/introduction/quickstart)**: TypeSafe AI's model that returns typed answers and probabilities for fast agent decisions
     - **MCP (Model Context Protocol)**
         - **[MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)**: official Python SDK for building MCP servers and clients
     - **[Meta Muse](https://ai.meta.com/muse/)**: always-on agents that keep working on tasks across your connected apps
     - **Multi-Agent Orchestration**
         - **[CrewAI](https://github.com/crewAIInc/crewAI)**: framework for orchestrating role-playing, autonomous AI agents
-    - **[n8n](https://docs.n8n.io/)**: open-source workflow automation platform for building AI agents and integrations
 - **AI Coding Assistant**
     - **[GitHub Copilot](https://docs.github.com/en/copilot)**: AI code completion and chat for code editors and IDEs
     - **[JetBrains AI Assistant](https://www.jetbrains.com/ai/)**: AI code completion and chat built into JetBrains IDEs
