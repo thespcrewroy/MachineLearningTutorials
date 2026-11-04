@@ -19,8 +19,19 @@
 - **Computer Vision**: teaching computers to interpret and understand images and video
     - **Image Classification**: assigning one label to a whole image, such as "cat" or "truck"
     - **Image Segmentation**: splitting an image into regions to separate objects from the background
+        - **Instance Segmentation**: also separates individual objects of the same class
+        - **Semantic Segmentation**: labels every pixel with a class
     - **NeRF (Neural Radiance Fields)**: neural networks that reconstruct 3D scenes from a set of 2D images
+    - **Object Detection**: finding and labeling objects in an image with bounding boxes
+        - **Anchor Box**: a preset box shape a detector adjusts to fit each object
+        - **IoU (Intersection over Union)**: how much a predicted box overlaps the true one
+        - **mAP (Mean Average Precision)**: the standard accuracy score for object detectors
+        - **NMS (Non-Maximum Suppression)**: drops overlapping boxes, keeping the most confident one
+        - **R-CNN (Region-Based CNN)**: proposes candidate regions, then classifies each with a CNN
+        - **YOLO (You Only Look Once)**: a fast detector that finds all objects in one pass
     - **OCR (Optical Character Recognition)**: converting images of text into machine-readable text
+    - **Pose Estimation**: detecting body keypoints like joints to infer a person's pose
+    - **Super-Resolution**: rebuilding a high-resolution image from a low-resolution one
 - **Deepfake**: synthetic media that swaps or fabricates a person's face or voice using AI
 - **Generative AI**: AI that creates new text, images, audio, video, or code from prompts
     - **AI Image Generation**: creating or editing images from text prompts
@@ -121,17 +132,40 @@
     - **SMOTE (Synthetic Minority Over-sampling Technique)**: creates synthetic minority-class examples
 - **Data Augmentation**: enlarging a training set with altered copies, like flipped images or reworded text
 - **Deep Learning**: machine learning with multi-layer neural networks that learn features directly from data
+    - **FLOPs (Floating-Point Operations)**: counts the arithmetic a model needs, a standard measure of compute cost
+    - **Model Compression**: shrinking a model's size or compute while keeping accuracy
+        - **Weight Pruning**: removing low-importance weights from a network to make it smaller and faster
     - **Neural Network**: layers of connected nodes, loosely inspired by the brain, that learn patterns from data
         - **Activation Function**: adds non-linearity to a neuron's output, e.g. ReLU or sigmoid
+            - **ReLU (Rectified Linear Unit)**: outputs the input if positive and zero otherwise
             - **Softmax**: turns a layer's outputs into class probabilities that sum to 1
         - **Autoencoder**: a network that learns to compress and rebuild its input, often to spot anomalies
+            - **Denoising Autoencoder**: learns to rebuild clean inputs from corrupted ones
         - **Backpropagation**: computing error gradients layer by layer to update a neural network's weights
             - **Automatic Differentiation**: computing exact derivatives of code automatically, as PyTorch does
+            - **Exploding Gradient**: when gradients grow uncontrollably through layers, destabilizing training
             - **Vanishing Gradient**: when gradients shrink through many layers or time steps so early ones stop learning
+        - **Batch Normalization**: normalizes layer inputs over each mini-batch to stabilize and speed up training
         - **CNN (Convolutional Neural Network)**: a neural network that uses convolution filters to learn spatial patterns in images
+            - **AlexNet**: the 2012 ImageNet-winning CNN that launched the deep learning boom
+            - **DenseNet**: a CNN that connects each layer to every later layer
+            - **GoogLeNet (Inception)**: a CNN that runs several filter sizes in parallel inside each block
+            - **LeNet**: LeCun's early CNN for handwritten digit recognition
+            - **MobileNet**: a lightweight CNN built on depthwise separable convolutions for phones
             - **Pooling**: downsampling feature maps by keeping the max or average of each region
             - **ResNet (Residual Network)**: a CNN with skip connections that make very deep networks trainable
+            - **Transposed Convolution**: upsamples feature maps with a learned convolution (deconvolution)
+            - **U-Net**: an encoder-decoder CNN with skip connections, built for image segmentation
             - **VGG (Visual Geometry Group Network)**: a simple, deep CNN widely used as a pretrained backbone
+        - **Encoder-Decoder**: compresses input into a representation, then expands it into an output
+            - **Seq2Seq (Sequence-to-Sequence)**: maps an input sequence to an output sequence, like translation
+                - **Autoregressive Decoding**: generating one token at a time, each based on the ones before it
+                - **Beam Search**: keeps the top few partial outputs at each step instead of only the best
+                - **Teacher Forcing**: feeding the true previous token during training instead of the model's guess
+        - **GAN (Generative Adversarial Network)**: a generator and discriminator trained against each other
+            - **Conditional GAN**: a GAN given extra input, like a label or image, to control what it generates
+            - **Mode Collapse**: when a GAN's generator produces only a few kinds of outputs
+        - **Layer Normalization**: normalizes across one example's features, standard in transformers
         - **MLP (Multilayer Perceptron)**: a feedforward network of stacked fully connected layers
         - **Perceptron**: a single artificial neuron that learns a linear decision boundary
         - **PINN (Physics-Informed Neural Network)**: a network whose loss also enforces known physics equations
@@ -139,7 +173,15 @@
             - **LSTM (Long Short-Term Memory)**: an RNN with gated memory cells for long-range patterns
         - **Transformer**: a neural network architecture built on self-attention that underpins modern LLMs
             - **Attention Mechanism**: lets each token weigh how relevant every other token is to it
+                - **Cross-Attention**: lets a decoder attend to the encoder's outputs
+                - **Masked Self-Attention**: hides future tokens so a decoder only looks backward
+                - **Multi-Head Attention**: runs several attentions in parallel to catch different relationships
+            - **BERT (Bidirectional Encoder Representations from Transformers)**: encoder-only transformer pretrained on masked words
+            - **Positional Encoding**: adds word-order information, since attention alone ignores order
             - **ViT (Vision Transformer)**: a transformer that classifies images by treating patches as tokens
+        - **Universal Approximation Theorem**: one hidden layer with enough neurons can approximate any continuous function
+        - **Weight Initialization**: choosing starting weights so signals don't vanish or explode, e.g. Xavier or Kaiming
+    - **Representation Learning**: learning useful features from data instead of hand-designing them
     - **Tensor**: a multi-dimensional array, the core data structure of deep learning frameworks
 - **Ensemble Learning**: combining multiple models to get better predictions than any single one
     - **Bagging**: trains models on random subsets of the data and averages their predictions
@@ -154,12 +196,17 @@
     - **Feature Scaling**: rescaling features to a common range so no single feature dominates
     - **Feature Selection**: keeping only the features that help a model and dropping redundant ones
 - **Gradient Descent**: an optimization method that iteratively adjusts parameters in the direction that reduces error
+    - **AdaGrad**: shrinks each weight's learning rate based on its past gradients
     - **Adam (Adaptive Moment Estimation)**: gradient descent that adapts each parameter's learning rate
     - **Epoch**: one full pass of the training data through a model
     - **Learning Rate**: the step size gradient descent takes on each update
+        - **Learning Rate Schedule**: lowers the learning rate during training, e.g. step or exponential decay
+    - **Momentum**: adds part of the previous update so steps keep a steady direction
+    - **RMSProp**: scales each weight's learning rate by a moving average of recent gradients
     - **SGD (Stochastic Gradient Descent)**: gradient descent that updates after each random example (or small batch)
 - **Hyperparameter Tuning**: searching for the best settings fixed before training, like tree depth
     - **Grid Search**: trying every combination of values in a predefined hyperparameter grid
+    - **Random Search**: tries random hyperparameter combinations instead of every one
 - **Loss Function**: measures how far predictions are from the true values; training minimizes it
     - **Cross-Entropy Loss**: compares predicted class probabilities to true labels, standard for classification
 - **ML Framework**: a library for building, training, and running machine learning models
@@ -177,10 +224,12 @@
     - **Learning Curve**: plots training and validation scores as data grows to spot a poor fit
     - **Regression Metrics**: MAE, RMSE, and R² measure how far numeric predictions are from true values
     - **Train-Test Split**: holding out data so a model is tested on examples it never trained on
+    - **Validation Set**: held-out data used during training to tune settings and catch overfitting
 - **Preprocessing Pipeline**: chaining data transformations so they are applied consistently in training and inference
 - **Recommender System**: suggests items a user may like based on past behavior or similar users
 - **Regularization**: penalizing model complexity to reduce overfitting
     - **Dropout**: randomly switching off neurons during training so none become over-relied on
+    - **Early Stopping**: stops training once validation performance stops improving
     - **L1 Regularization (Lasso)**: adds the absolute value of weights as a penalty, which can shrink some weights to zero
     - **L2 Regularization (Ridge)**: adds the squared value of weights as a penalty, which keeps all weights small
 - **Reinforcement Learning**: training an agent to take actions that maximize rewards through trial and error
