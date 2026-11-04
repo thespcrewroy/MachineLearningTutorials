@@ -42,9 +42,14 @@
 - **Computer Vision**
     - **[GeoSpy](https://geospy.ai/)**: AI-powered tool that identifies the geographic location of photos
     - **[MediaPipe](https://ai.google.dev/edge/mediapipe)**: Google's on-device ML solutions for vision tasks like face, hand, and pose tracking
+    - **Object Detection**
+        - **YOLO (You Only Look Once)**
+            - **[Ultralytics YOLO](https://docs.ultralytics.com/)**: open-source YOLO models for detection, segmentation, and pose estimation
     - **[OpenCV](https://docs.opencv.org/)**: open-source library for real-time computer vision
     - **[Pillow](https://pillow.readthedocs.io/)**: Python imaging library for opening, editing, and saving images
     - **[scikit-image](https://scikit-image.org/docs/stable/)**: Python library of image processing algorithms like segmentation
+    - **Super-Resolution**
+        - **[Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)**: open-source GAN-based upscaler for photos and anime images
 - **Deepfake**
     - **[Roop Unleashed](https://github.com/C0untFloyd/roop-unleashed)**: open-source face-swapping tool for images and video
 - **Generative AI**
@@ -188,11 +193,20 @@
 ## Machine Learning
 - **Benchmark Dataset**
     - **[CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)**: 60,000 small color images in 10 classes for image classification
+    - **[COCO (Common Objects in Context)](https://cocodataset.org/)**: 328,000 everyday images labeled for detection, segmentation, and captioning
+    - **[Common Crawl](https://commoncrawl.org/)**: free, open archive of billions of web pages used to train LLMs
+    - **[DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/)**: 1,000 high-resolution images, the standard super-resolution training set
+    - **[FFHQ (Flickr-Faces-HQ)](https://github.com/NVlabs/ffhq-dataset)**: 70,000 high-quality face images used to train StyleGAN
+    - **[ImageNet](https://www.image-net.org/)**: over 14 million images in thousands of classes, the classic vision benchmark
     - **[Intel Image Classification](https://www.kaggle.com/datasets/puneet6060/intel-image-classification)**: 25,000 scene images in 6 classes like forest and street
+    - **[KITTI](https://www.cvlibs.net/datasets/kitti/)**: driving camera and LiDAR data for 3D object detection and tracking
     - **[MNIST](https://huggingface.co/datasets/ylecun/mnist)**: 70,000 handwritten digit images, the classic starter dataset
+    - **[nuScenes](https://www.nuscenes.org/)**: full-sensor self-driving dataset from Boston and Singapore streets
+    - **[PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/)**: 20-class object detection and segmentation benchmark
     - **[Speech Commands](https://huggingface.co/datasets/google/speech_commands)**: one-second clips of spoken words for keyword spotting
     - **[UCI Machine Learning Repository](https://archive.ics.uci.edu/)**: searchable archive of classic datasets like Heart Disease and Breast Cancer
     - **[UrbanSound8K](https://urbansounddataset.weebly.com/urbansound8k.html)**: 8,732 labeled city sound clips like sirens, drills, and dog barks
+    - **[Waymo Open Dataset](https://waymo.com/open/)**: large self-driving dataset of camera and LiDAR scenes, free for research
 - **Class Imbalance**
     - **[imbalanced-learn](https://imbalanced-learn.org/stable/)**: scikit-learn-compatible resampling tools, including SMOTE
 - **Deep Learning**
