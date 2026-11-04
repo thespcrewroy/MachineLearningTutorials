@@ -43,6 +43,7 @@
 - **NLP (Natural Language Processing)**: teaching computers to understand, process, and generate human language
     - **Bag of Words**: represents text by its word counts, ignoring word order
     - **Lemmatization**: reducing words to their dictionary form, e.g. "better" → "good"
+    - **N-gram**: a sequence of n consecutive words, like a bigram or trigram
     - **NER (Named Entity Recognition)**: labeling people, places, and organizations in text
     - **POS Tagging (Part-of-Speech Tagging)**: labeling each word as a noun, verb, adjective, etc.
     - **Sentiment Analysis**: classifying text as positive, negative, or neutral
@@ -50,6 +51,7 @@
     - **Stop Words**: common words like "the" and "is" that are often removed before analysis
     - **TF-IDF (Term Frequency–Inverse Document Frequency)**: weights words common in a document but rare overall
     - **Tokenization**: splitting text into units such as words, subwords, or sentences
+    - **Word2Vec**: learns word embeddings from the words around each word, using CBOW or skip-gram
 - **Prompt Engineering**: designing and refining model inputs to get accurate, useful outputs
 - **RAG (Retrieval-Augmented Generation)**: improving LLM answers by retrieving relevant documents and adding them to the prompt
     - **Chunking**: splitting documents into smaller passages before embedding them for retrieval
@@ -83,8 +85,10 @@
 - **Data Cleaning**: fixing incorrect, corrupted, duplicate, or incomplete data
     - **Imputation**: filling in missing values with estimates such as the mean or median
     - **Outlier Detection**: finding data points that differ sharply from the rest of the data
+        - **IQR Method**: flags points more than 1.5 IQRs below Q1 or above Q3
 - **Data Integration**: combining data from different sources into one unified dataset
     - **API (Application Programming Interface)**: lets programs request data or services from each other
+        - **REST API**: an API that exposes resources at URLs and acts on them with HTTP methods
     - **JSON (JavaScript Object Notation)**: a text format of nested key-value data, the usual format of web API responses
     - **SQL (Structured Query Language)**: the standard language for querying and managing relational databases
 - **Data Mining**: extracting and discovering patterns in large datasets
@@ -95,6 +99,8 @@
 - **EDA (Exploratory Data Analysis)**: summarizing and plotting a dataset to spot patterns, outliers, and problems before modeling
 - **Regex (Regular Expression)**: a pattern language for searching, matching, and extracting text
 - **Statistical Computing**: using programming languages and software to perform statistical analysis
+- **Structured Data**: data in a fixed layout of rows and columns, like tables and spreadsheets
+- **Unstructured Data**: data without a fixed table layout, like text, images, and audio
 - **Vectorization**: applying an operation to a whole array or column at once instead of looping
 - **Web Scraping**: automatically extracting data from websites
 
@@ -117,12 +123,16 @@
 - **Deep Learning**: machine learning with multi-layer neural networks that learn features directly from data
     - **Neural Network**: layers of connected nodes, loosely inspired by the brain, that learn patterns from data
         - **Activation Function**: adds non-linearity to a neuron's output, e.g. ReLU or sigmoid
+            - **Softmax**: turns a layer's outputs into class probabilities that sum to 1
         - **Autoencoder**: a network that learns to compress and rebuild its input, often to spot anomalies
         - **Backpropagation**: computing error gradients layer by layer to update a neural network's weights
             - **Automatic Differentiation**: computing exact derivatives of code automatically, as PyTorch does
+            - **Vanishing Gradient**: when gradients shrink through many layers or time steps so early ones stop learning
         - **CNN (Convolutional Neural Network)**: a neural network that uses convolution filters to learn spatial patterns in images
+            - **Pooling**: downsampling feature maps by keeping the max or average of each region
             - **ResNet (Residual Network)**: a CNN with skip connections that make very deep networks trainable
             - **VGG (Visual Geometry Group Network)**: a simple, deep CNN widely used as a pretrained backbone
+        - **MLP (Multilayer Perceptron)**: a feedforward network of stacked fully connected layers
         - **Perceptron**: a single artificial neuron that learns a linear decision boundary
         - **PINN (Physics-Informed Neural Network)**: a network whose loss also enforces known physics equations
         - **RNN (Recurrent Neural Network)**: a neural network with loops that processes sequences like text or time series
@@ -130,6 +140,7 @@
         - **Transformer**: a neural network architecture built on self-attention that underpins modern LLMs
             - **Attention Mechanism**: lets each token weigh how relevant every other token is to it
             - **ViT (Vision Transformer)**: a transformer that classifies images by treating patches as tokens
+    - **Tensor**: a multi-dimensional array, the core data structure of deep learning frameworks
 - **Ensemble Learning**: combining multiple models to get better predictions than any single one
     - **Bagging**: trains models on random subsets of the data and averages their predictions
         - **Random Forest**: an ensemble of decision trees trained with bagging on random subsets of features
@@ -141,23 +152,33 @@
 - **Feature Engineering**: creating, transforming, or selecting input variables to help a model learn
     - **Categorical Encoding**: converting categories into numbers, e.g. one-hot or label encoding
     - **Feature Scaling**: rescaling features to a common range so no single feature dominates
+    - **Feature Selection**: keeping only the features that help a model and dropping redundant ones
 - **Gradient Descent**: an optimization method that iteratively adjusts parameters in the direction that reduces error
     - **Adam (Adaptive Moment Estimation)**: gradient descent that adapts each parameter's learning rate
+    - **Epoch**: one full pass of the training data through a model
+    - **Learning Rate**: the step size gradient descent takes on each update
     - **SGD (Stochastic Gradient Descent)**: gradient descent that updates on small random batches
 - **Hyperparameter Tuning**: searching for the best settings fixed before training, like tree depth
     - **Grid Search**: trying every combination of values in a predefined hyperparameter grid
 - **Loss Function**: measures how far predictions are from the true values; training minimizes it
+    - **Cross-Entropy Loss**: compares predicted class probabilities to true labels, standard for classification
 - **ML Framework**: a library for building, training, and running machine learning models
 - **ML Platform**: a managed cloud service for building, training, and deploying ML models
 - **MLOps (Machine Learning Operations)**: practices for tracking, deploying, and monitoring machine learning models
     - **Experiment Tracking**: logging the parameters, metrics, and artifacts of training runs so they can be compared
     - **Model Deployment**: serving a trained model so apps and users can request predictions
+        - **Model Serialization**: saving a trained model to a file so it can be reloaded later
 - **Model Evaluation**: measuring how well a trained model performs on data it has not seen
+    - **Classification Metrics**: accuracy, precision, recall, and F1 score built from the confusion matrix
     - **Confusion Matrix**: a table of predicted vs. actual classes behind accuracy, precision, and recall
     - **Cross-Validation**: rotating the held-out data across folds for a more reliable score
+    - **Data Leakage**: when test or future information leaks into training and inflates scores
+    - **Feature Importance**: how much each feature contributes to a model's predictions
     - **Learning Curve**: plots training and validation scores as data grows to spot a poor fit
+    - **Regression Metrics**: MAE, RMSE, and R² measure how far numeric predictions are from true values
     - **Train-Test Split**: holding out data so a model is tested on examples it never trained on
 - **Preprocessing Pipeline**: chaining data transformations so they are applied consistently in training and inference
+- **Recommender System**: suggests items a user may like based on past behavior or similar users
 - **Regularization**: penalizing model complexity to reduce overfitting
     - **Dropout**: randomly switching off neurons during training so none become over-relied on
     - **L1 Regularization (Lasso)**: adds the absolute value of weights as a penalty, which can shrink some weights to zero
@@ -174,15 +195,20 @@
             - **Experience Replay**: training on random batches of stored past transitions to stabilize learning
     - **RL Environment**: a simulated world that an RL agent observes, acts in, and gets rewards from
 - **Supervised Learning**: training models on labeled data to predict outputs from inputs
+    - **Decision Boundary**: the line or surface where a classifier switches from one class to another
     - **Decision Tree**: a model that predicts by splitting data on feature values in a tree of if-then rules
+        - **Gini Impurity**: how mixed a node's classes are, used like entropy to pick splits
         - **Information Gain**: the drop in entropy from a split, used to pick the feature to split on
+        - **Pruning**: trimming a tree's branches to reduce overfitting
     - **KNN (K-Nearest Neighbors)**: predicts from the labels of the closest data points
     - **Linear Regression**: fits a straight line or plane that predicts a numeric value from input features
         - **Multiple Linear Regression**: linear regression with more than one input feature
         - **Polynomial Regression**: regression that fits curved relationships using polynomial features
     - **Logistic Regression**: predicts the probability of a class using a logistic (sigmoid) function
     - **Naive Bayes Classifier**: a probabilistic classifier that applies Bayes' theorem assuming independent features
+        - **Laplace Smoothing**: adds a small count to every category so unseen values don't zero out a probability
     - **SVM (Support Vector Machine)**: finds the boundary that separates classes with the widest margin
+        - **Kernel**: a similarity function that lets an SVM draw non-linear boundaries
 - **Transfer Learning**: reusing a model trained on one task as the starting point for another
     - **Feature Extraction**: freezing a pretrained model and training only a new output layer
     - **Fine-Tuning**: further training a pretrained model on task-specific data
@@ -216,11 +242,19 @@
 - **Numerical Analysis**: algorithms for approximating mathematical solutions on computers
     - **RK4 (Fourth-Order Runge-Kutta)**: steps through a differential equation's solution with high accuracy
 - **Probability**: the mathematics of uncertainty and how likely events are
+    - **Bayes' Theorem**: computes a probability from the reverse conditional probability and a prior
     - **Normal (Gaussian) Distribution**: the bell-shaped distribution defined by a mean and standard deviation
 - **Real Analysis**: the rigorous study of real numbers, limits, continuity, and convergence
 - **Statistics**: collecting, analyzing, and interpreting data to draw conclusions
     - **Bayesian Statistics**: updating the probability of a hypothesis as new evidence arrives
+    - **Correlation**: how strongly two variables move together, from −1 to +1
+        - **Multicollinearity**: when input features are highly correlated, making model estimates unstable
     - **Multivariate Analysis**: analyzing several variables at once to understand how they relate
     - **Statistical Inference**: drawing conclusions about a population from a sample
     - **Time Series Analysis**: analyzing data points ordered in time to find trends and forecast values
+        - **Autocorrelation**: how strongly a series correlates with its own past values
+        - **Exponential Smoothing**: forecasting with a weighted average that favors recent values
         - **Rolling Window**: computing a statistic over a sliding window of recent points, like a moving average
+        - **Stationarity**: when a series' mean and variance don't change over time
+            - **Differencing**: subtracting consecutive values to remove trend
+        - **Time Series Decomposition**: splitting a series into trend, seasonality, and noise
