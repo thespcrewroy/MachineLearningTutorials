@@ -94,6 +94,7 @@
 - **Computational Notebook**: an interactive document that mixes live code, output, charts, and notes
 - **Data App**: an interactive web app that lets users explore data or models
 - **Data Cleaning**: fixing incorrect, corrupted, duplicate, or incomplete data
+    - **Deduplication**: finding and merging records that describe the same thing
     - **Imputation**: filling in missing values with estimates such as the mean or median
     - **Outlier Detection**: finding data points that differ sharply from the rest of the data
         - **IQR Method**: flags points more than 1.5 IQRs below Q1 or above Q3
@@ -103,8 +104,14 @@
     - **JSON (JavaScript Object Notation)**: a text format of nested key-value data, the usual format of web API responses
     - **SQL (Structured Query Language)**: the standard language for querying and managing relational databases
 - **Data Mining**: extracting and discovering patterns in large datasets
+    - **Distance Metric**: measures how far apart two data points are, e.g. Euclidean or Manhattan
+    - **Jaccard Index**: similarity of two sets, shared items divided by total distinct items
+    - **KDD (Knowledge Discovery in Databases)**: the full process of selecting, cleaning, mining, and interpreting data
 - **Data Preprocessing**: transforming raw data into a clean, consistent format for analysis or modeling
+    - **Data Aggregation**: combining many records into summaries, like daily totals into monthly
     - **Data Reshaping**: converting tables between wide and long form, e.g. by melting or pivoting
+    - **Discretization**: converting continuous values into intervals or bins
+    - **Sampling**: picking a representative subset of data to analyze
     - **Tidy Data**: a layout where each row is one observation and each column is one variable
 - **Data Visualization**: representing data graphically with charts, plots, and interactive dashboards
 - **EDA (Exploratory Data Analysis)**: summarizing and plotting a dataset to spot patterns, outliers, and problems before modeling
@@ -129,6 +136,7 @@
     - **Overfitting**: when a model memorizes its training data and fails on new data
     - **Underfitting**: when a model is too simple to capture the patterns in its data
 - **Class Imbalance**: when one class far outnumbers the others, biasing a classifier toward it
+    - **Cost-Sensitive Learning**: weighting mistakes by their cost, like missed fraud costing more
     - **SMOTE (Synthetic Minority Over-sampling Technique)**: creates synthetic minority-class examples
 - **Data Augmentation**: enlarging a training set with altered copies, like flipped images or reworded text
 - **Deep Learning**: machine learning with multi-layer neural networks that learn features directly from data
@@ -176,7 +184,7 @@
                 - **Cross-Attention**: lets a decoder attend to the encoder's outputs
                 - **Masked Self-Attention**: hides future tokens so a decoder only looks backward
                 - **Multi-Head Attention**: runs several attentions in parallel to catch different relationships
-            - **BERT (Bidirectional Encoder Rep. from Transformers)**: encoder-only transformer pretrained on masked words
+            - **BERT (Bidirectional Encoder Representations from Transformers)**: encoder-only transformer pretrained on masked words
             - **Positional Encoding**: adds word-order information, since attention alone ignores order
             - **ViT (Vision Transformer)**: a transformer that classifies images by treating patches as tokens
         - **Universal Approximation Theorem**: one hidden layer with enough neurons can approximate any continuous function
@@ -223,6 +231,8 @@
     - **Feature Importance**: how much each feature contributes to a model's predictions
     - **Learning Curve**: plots training and validation scores as data grows to spot a poor fit
     - **Regression Metrics**: MAE, RMSE, and R² measure how far numeric predictions are from true values
+    - **ROC Curve**: plots true positive rate against false positive rate across thresholds
+        - **AUC (Area Under the Curve)**: sums an ROC curve into one score, where 1 is perfect
     - **Train-Test Split**: holding out data so a model is tested on examples it never trained on
     - **Validation Set**: held-out data used during training to tune settings and catch overfitting
 - **Preprocessing Pipeline**: chaining data transformations so they are applied consistently in training and inference
@@ -245,7 +255,9 @@
     - **RL Environment**: a simulated world that an RL agent observes, acts in, and gets rewards from
 - **Supervised Learning**: training models on labeled data to predict outputs from inputs
     - **Decision Boundary**: the line or surface where a classifier switches from one class to another
+        - **Linear Separability**: when one straight line or plane can split the classes
     - **Decision Tree**: a model that predicts by splitting data on feature values in a tree of if-then rules
+        - **Gain Ratio**: information gain adjusted so many-valued attributes aren't favored
         - **Gini Impurity**: how mixed a node's classes are, used like entropy to pick splits
         - **Information Gain**: the drop in entropy from a split, used to pick the feature to split on
         - **Pruning**: trimming a tree's branches to reduce overfitting
@@ -256,6 +268,8 @@
     - **Logistic Regression**: predicts the probability of a class using a logistic (sigmoid) function
     - **Naive Bayes Classifier**: a probabilistic classifier that applies Bayes' theorem assuming independent features
         - **Laplace Smoothing**: adds a small count to every category so unseen values don't zero out a probability
+    - **Rule-Based Classifier**: classifies with a set of if-then rules
+        - **Sequential Covering**: learns rules one at a time, removing the examples each covers
     - **SVM (Support Vector Machine)**: finds the boundary that separates classes with the widest margin
         - **Kernel**: a similarity function that lets an SVM draw non-linear boundaries
 - **Transfer Learning**: reusing a model trained on one task as the starting point for another
@@ -268,13 +282,33 @@
         - **Isolation Forest**: isolates anomalies with random splits, since outliers need fewer splits
     - **Association Rule Mining**: finding if-then rules between items that often occur together
         - **Apriori**: finds frequent itemsets to build association rules, as in market basket analysis
+        - **Confidence**: how often a rule's right side appears when its left side does
+        - **FP-Growth**: finds frequent itemsets with a compressed FP-tree instead of generating candidates
+        - **Frequent Itemset**: a set of items whose support meets a minimum threshold
+            - **Closed Itemset**: a frequent itemset with no superset of the same support
+            - **Maximal Frequent Itemset**: a frequent itemset with no frequent superset
+        - **Frequent Subgraph Mining**: finding subgraphs that appear often across many graphs
+        - **Lift**: how much more often items occur together than chance would predict
+        - **Sequential Pattern Mining**: finding ordered sequences of events that occur often
+        - **Support**: the share of transactions that contain an itemset
     - **Clustering**: grouping similar data points together without predefined labels
         - **DBSCAN**: density-based clustering that labels points in sparse regions as noise
+            - **OPTICS**: orders points by density so clusters of varying density can be found
         - **Elbow Method**: picking k where adding more clusters stops reducing error much
+        - **Fuzzy C-Means**: soft clustering where each point belongs to every cluster by some degree
+        - **Gaussian Mixture Model**: models clusters as a mix of Gaussian distributions
+            - **EM Algorithm (Expectation-Maximization)**: alternates guessing hidden assignments and updating parameters
         - **Hierarchical Clustering**: builds a tree of nested clusters by repeatedly merging or splitting groups
+            - **Dendrogram**: a tree diagram showing the order in which clusters merge
+            - **Linkage**: how distance between clusters is measured, e.g. single, complete, or Ward
         - **K-Means**: partitions data into k clusters by assigning points to the nearest cluster center
+            - **Bisecting K-Means**: repeatedly splits one cluster in two with k-means
+            - **K-Means++**: picks spread-out starting centroids to improve k-means results
+        - **Self-Organizing Map**: a neural network that maps high-dimensional data onto a 2D grid
         - **Silhouette Score**: rates how well each point fits its own cluster versus the nearest other one
+        - **Subspace Clustering**: finds clusters that exist only in some subsets of the features
     - **Dimensionality Reduction**: shrinking the number of features while keeping most of the data's information
+        - **Curse of Dimensionality**: as features grow, data gets sparse and distances lose meaning
         - **PCA (Principal Component Analysis)**: reduces data dimensions by projecting onto the directions of greatest variance
 
 ## Mathematics
@@ -287,6 +321,9 @@
 - **Discrete Mathematics**: the study of countable structures such as logic, sets, graphs, and integers
 - **Graph Theory**: the study of networks of nodes connected by edges
 - **Higher Mathematics**: advanced, proof-based mathematics beyond calculus
+- **Information Theory**: the math of measuring information and uncertainty
+    - **Entropy**: a measure of uncertainty or impurity in data
+    - **Mutual Information**: how much knowing one variable reduces uncertainty about another
 - **Linear Algebra**: the mathematics of vectors, matrices, and linear transformations
 - **Linear Optimization**: finding the best outcome of a linear objective subject to linear constraints
 - **Numerical Analysis**: algorithms for approximating mathematical solutions on computers
@@ -297,9 +334,12 @@
 - **Real Analysis**: the rigorous study of real numbers, limits, continuity, and convergence
 - **Statistics**: collecting, analyzing, and interpreting data to draw conclusions
     - **Bayesian Statistics**: updating the probability of a hypothesis as new evidence arrives
+        - **Bayesian Network**: a graph of variables and their conditional dependencies
     - **Correlation**: how strongly two variables move together, from −1 to +1
         - **Multicollinearity**: when input features are highly correlated, making model estimates unstable
+    - **Levels of Measurement**: nominal, ordinal, interval, and ratio scales that decide which math applies
     - **Multivariate Analysis**: analyzing several variables at once to understand how they relate
+    - **Simpson's Paradox**: a trend in separate groups that reverses when the groups are combined
     - **Statistical Inference**: drawing conclusions about a population from a sample
     - **Time Series Analysis**: analyzing data points ordered in time to find trends and forecast values
         - **Autocorrelation**: how strongly a series correlates with its own past values
