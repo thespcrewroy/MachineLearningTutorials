@@ -94,14 +94,17 @@
 
 ## Resources
 - [AI Expert Roadmap](https://github.com/AMAI-GmbH/AI-Expert-Roadmap): step-by-step visual guide to becoming an AI practitioner
-- [Andrew Ng Courses](https://www.andrewng.org/courses/): AI pioneer's free courses on machine learning and deep learningon clone with AI features
+- [Andrew Ng Courses](https://www.andrewng.org/courses/): AI pioneer's free courses on machine learning and deep learning
 - [Carnegie Mellon AI Curriculum](https://www.cs.cmu.edu/bs-in-artificial-intelligence/curriculum): CMU's open AI and machine learning curriculum
 - [DALL-E 3 Research Paper](https://cdn.openai.com/papers/dall-e-3.pdf): OpenAI's official paper on the DALL-E 3 image generation model
 - [DataCamp](https://www.datacamp.com/): interactive data science and machine learning courses online
 - [Deep Learning Specialization (Andrew Ng)](https://www.coursera.org/specializations/deep-learning): DeepLearning.AI's deep learning course series on Coursera
 - [Fast.ai](https://www.fast.ai/): practical deep learning courses taught top-down for coders
 - [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/chapter1/1): free course on NLP with transformers and the Hugging Face ecosystem
+- [Hung-yi Lee Machine Learning Course (NTU)](https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.php): lectures on self-attention, transformers, and GANs (Mandarin, English slides)
+- [Neural Networks and Deep Learning (Michael Nielsen)](http://neuralnetworksanddeeplearning.com/): free online book that builds neural networks from first principles
 - [Seeing Theory](https://seeing-theory.brown.edu/): Brown University's visual introduction to probability and statistics
 - [Stable Diffusion Crash Course for Beginners](https://www.youtube.com/watch?v=dMkiOex_cKU): generate and customize images with Stable Diffusion
 - [Stock Price Prediction Using Python & Machine Learning](https://www.youtube.com/watch?v=QIUxPv5PJOY): predict stock prices with an LSTM neural network in Python
+- [TensorFlow Playground](https://playground.tensorflow.org/): train a small neural network in the browser and watch it learn
 - [Vector Embeddings Tutorial](https://www.youtube.com/watch?v=yfHHvmaMkcA): learn what embeddings are and how to create and use them
