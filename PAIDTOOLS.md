@@ -6,6 +6,7 @@
 - [Big Data](#big-data)
 - [Business Analytics](#business-analytics)
 - [Data Analytics](#data-analytics)
+- [Data Science](#data-science)
 - [Mathematics](#mathematics)
 
 </details>
@@ -30,6 +31,11 @@
 ## Data Analytics
 - **Observability**
     - **[Dynatrace](https://docs.dynatrace.com/)**: monitors application performance, infrastructure, logs, traces, and system health
+
+## Data Science
+- **Data Integration**
+    - **API (Application Programming Interface)**
+        - **[X API](https://docs.x.com/)**: pay-per-use API for reading and posting on X (formerly Twitter)
 
 ## Mathematics
 - **[Mathematica](https://www.wolfram.com/mathematica/)**: Wolfram's technical computing software for symbolic and numeric math
