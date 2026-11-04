@@ -157,7 +157,7 @@
     - **Adam (Adaptive Moment Estimation)**: gradient descent that adapts each parameter's learning rate
     - **Epoch**: one full pass of the training data through a model
     - **Learning Rate**: the step size gradient descent takes on each update
-    - **SGD (Stochastic Gradient Descent)**: gradient descent that updates on small random batches
+    - **SGD (Stochastic Gradient Descent)**: gradient descent that updates after each random example (or small batch)
 - **Hyperparameter Tuning**: searching for the best settings fixed before training, like tree depth
     - **Grid Search**: trying every combination of values in a predefined hyperparameter grid
 - **Loss Function**: measures how far predictions are from the true values; training minimizes it
@@ -225,7 +225,8 @@
         - **Hierarchical Clustering**: builds a tree of nested clusters by repeatedly merging or splitting groups
         - **K-Means**: partitions data into k clusters by assigning points to the nearest cluster center
         - **Silhouette Score**: rates how well each point fits its own cluster versus the nearest other one
-    - **PCA (Principal Component Analysis)**: reduces data dimensions by projecting onto the directions of greatest variance
+    - **Dimensionality Reduction**: shrinking the number of features while keeping most of the data's information
+        - **PCA (Principal Component Analysis)**: reduces data dimensions by projecting onto the directions of greatest variance
 
 ## Mathematics
 - **Calculus**: the mathematics of continuous change through derivatives and integrals
