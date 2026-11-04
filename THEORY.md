@@ -184,7 +184,7 @@
                 - **Cross-Attention**: lets a decoder attend to the encoder's outputs
                 - **Masked Self-Attention**: hides future tokens so a decoder only looks backward
                 - **Multi-Head Attention**: runs several attentions in parallel to catch different relationships
-            - **BERT (Bidirectional Encoder Representations from Transformers)**: encoder-only transformer pretrained on masked words
+            - **BERT (Bidirectional Encoder Rep. from Transformers)**: encoder-only transformer pretrained on masked words
             - **Positional Encoding**: adds word-order information, since attention alone ignores order
             - **ViT (Vision Transformer)**: a transformer that classifies images by treating patches as tokens
         - **Universal Approximation Theorem**: one hidden layer with enough neurons can approximate any continuous function
