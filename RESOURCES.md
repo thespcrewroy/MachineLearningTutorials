@@ -31,6 +31,7 @@
 * Applied Data Sceince
 * Artificial Intelligence: Franklin
 * Artificial Intelligence: Terry
+* Computer Science
 * Informatics
 
 ## College Courses
