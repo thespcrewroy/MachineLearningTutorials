@@ -37,6 +37,7 @@
 ## College Courses
 * Applied Statistics and Data Analysis for Business (BUSN 3000)
 * Predictive Modeling and Optimization (BUSN 4000)
+* Introduction to Computational Investing (CSCI 4170)
 * Artificial Intelligence and the Web (CSCI 4330/6330)
 * Ethics and Artificial Intelligence (ARTI/PHIL 4340/6340)
 * Data Mining (CSCI 4380/6380)
