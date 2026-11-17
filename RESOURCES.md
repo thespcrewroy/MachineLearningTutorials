@@ -87,18 +87,18 @@
 
 ## Communities
 * Discord Groups
-    * [AI Futures](https://discord.gg/8hca6bytqU)
-    * [PerplexityAI](https://discord.gg/sY9PDCNAXd)
-    * [Deep Learning @ UGA](https://discord.gg/xvRUdddVaT)
-    * [Applied AI in Education](https://discord.gg/exjKtHBPVX)
-    * [Math @ UGA](https://discord.gg/YkXkWEGTaW)
-    * [MATH 3500 - 3510](https://discord.gg/BSpyQ835KX)
-    * [AI@UGA](https://discord.gg/FR4mAmaaYH)
-    * [Dr. Johnsen's Office](https://discord.gg/N72mNjG2Bu)
-    * [Applied CS VIPR](https://discord.gg/V4MCtPPPwg)
+    * [AI Futures](https://discord.gg/8hca6bytqU): community discussing artificial intelligence, emerging technologies, and the future of AI
+    * [PerplexityAI](https://discord.gg/sY9PDCNAXd): community for discussing Perplexity's AI-powered search engine, features, and applications
+    * [Deep Learning @ UGA](https://discord.gg/xvRUdddVaT): University of Georgia community focused on deep learning, neural networks, and machine learning
+    * [Applied AI in Education](https://discord.gg/exjKtHBPVX): community exploring practical applications of artificial intelligence in teaching and learning
+    * [Math @ UGA](https://discord.gg/YkXkWEGTaW): University of Georgia community for mathematics students to collaborate, study, and share resources
+    * [MATH 3500 - 3510](https://discord.gg/BSpyQ835KX): study group for University of Georgia students taking MATH 3500 and MATH 3510
+    * [AI@UGA](https://discord.gg/FR4mAmaaYH): University of Georgia community connecting students interested in artificial intelligence and machine learning
+    * [Dr. Johnsen's Office](https://discord.gg/N72mNjG2Bu): academic community for communicating with Dr. Johnsen, discussing coursework, and receiving assistance
+    * [Applied CS VIPR](https://discord.gg/V4MCtPPPwg): community for collaborating on applied computer science projects, research, and technical discussions
 * Meetup
-    * [Atlanta AI Developers](https://www.meetup.com/aittg-atlanta/?eventOrigin=your_groups)
-    * [Data Science DAWGS of Athens](https://www.meetup.com/datasciencedawgsathens/?eventOrigin=your_groups)
+    * [Atlanta AI Developers](https://www.meetup.com/aittg-atlanta/?eventOrigin=your_groups): Atlanta-based community connecting AI developers through technical discussions, networking, and events
+    * [Data Science DAWGS of Athens](https://www.meetup.com/datasciencedawgsathens/?eventOrigin=your_groups): Athens-based community for data science enthusiasts to collaborate, network, and explore machine learning and analytics
 
 ## Competitions
 * [1 September] [Putnam Competition](https://maa.org/math-competitions/william-lowell-putnam-mathematical-competition): premier undergrad mathematics competition
