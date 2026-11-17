@@ -98,7 +98,7 @@
     * [Applied CS VIPR](https://discord.gg/V4MCtPPPwg): community for collaborating on applied computer science projects, research, and technical discussions
 * Meetup
     * [Atlanta AI Developers](https://www.meetup.com/aittg-atlanta/?eventOrigin=your_groups): Atlanta-based community connecting AI developers through technical discussions, networking, and events
-    * [Data Science DAWGS of Athens](https://www.meetup.com/datasciencedawgsathens/?eventOrigin=your_groups): Athens-based community for data science enthusiasts to collaborate, network, and explore machine learning and analytics
+    * [Data Science DAWGS of Athens](https://www.meetup.com/datasciencedawgsathens/?eventOrigin=your_groups): Athens-based community for data science enthusiasts
 
 ## Competitions
 * [1 September] [Putnam Competition](https://maa.org/math-competitions/william-lowell-putnam-mathematical-competition): premier undergrad mathematics competition
