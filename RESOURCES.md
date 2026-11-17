@@ -1,3 +1,19 @@
+## Certifications
+* Actuary Examination P (Probability)
+* Actuary Examination FM (Financial Mathematics)
+* Actuary Examination FAM (Fundamentals of Actuarial Mathematics)
+* Actuary Examination ALTAM (Advanced Long-Term Actuarial Mathematics)
+* Actuary Examination ASTAM (Advanced Short-Term Actuarial Mathematics)
+* Actuary Examination SRM (Statistics for Risk Modeling)
+* Actuary Examination PA (Predictive Analytics)
+* Actuary Examination ATPA (Advanced Topics in Predictive Analysis)
+
+## College Majors
+
+## College Minors
+
+## College Certificates
+
 ## College Courses
 * Symbolic Logic (PHIL 2500)
 * Topics in Symbolic Logic (PHIL 3510)
@@ -11,7 +27,8 @@
 * Natural Language Processing (LING 4570/6570)
 * Reinforcement Learning (ARTI 4600/6600)
 * Biomedical Image Analysis (CSCI 4850)
-* Special Topics in Computing (CSCI 4900)
+* Geng Yan Special Topics in Computing: Deep Learning and Generative AI (CSCI 4900)
+* Jin Sun Special Topics in Computing: The Deep Learning Approach (CSCI 4900)
 * Topics in Artificial Intelligence (ARTI 4900/8000)
 * Undergrad Research Thesis (or Final Project) in AI (ARTI 4990R)
 * Faculty-Mentored Undergraduate Research in AI (ARTI 4960R)
@@ -39,14 +56,11 @@
 * Calculus I for Science and Engineering (MATH 2250)
 * Calculus II for Science and Engineering (MATH 2260)
 * Multivariable Calculus (MATH 2500)
-* Discrete Math (CSCI/MATH 2610)
 * Differential Equations (MATH 2700)
 * Applied Linear Algebra (MATH 3300)
 * Numerical Analysis I (MATH 4500)
 * Probability (MATH 4600)
 * Matrix and Integral Transforms (MATH 4650)
-* Combinatorics (MATH/CSCI 4670)
-* Graph Theory (MATH 4690)
 * Introductory Statistics (STAT 2000)
 * Programming and Data Literacy Using R (STAT 2360-2360L)
 * Statistical Methods (STAT 4210)
