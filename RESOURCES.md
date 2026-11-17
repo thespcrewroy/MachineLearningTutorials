@@ -11,20 +11,26 @@
 * CompTIA SecAI+
 
 ## College Majors
-
-## College Minors
+* Artificial Intelligence: Masters
+* Computer Science: Applied Data Science Emphasis
+* Computer Science: Artificial Intelligence (AI) Emphasis
+* Data Science
+* Math
+* Statistics
 
 ## College Certificates
 * Actuarial Science
+* Applied Data Sceince
+* Artificial Intelligence: Franklin
+* Artificial Intelligence: Terry
+* Informatics
 
 ## College Courses
 * Applied Statistics and Data Analysis for Business (BUSN 3000)
 * Predictive Modeling and Optimization (BUSN 4000)
-* Symbolic Logic (PHIL 2500)
-* Topics in Symbolic Logic (PHIL 3510)
 * Artificial Intelligence and the Web (CSCI 4330/6330)
-* Data Mining (CSCI 4380/6380)
 * Ethics and Artificial Intelligence (ARTI/PHIL 4340/6340)
+* Data Mining (CSCI 4380/6380)
 * Deductive Systems (PHIL/LING 4510/6510)
 * Symbolic Programming (CSCI/ARTI 4540/6540)
 * Artificial Intelligence (CSCI/PHIL 4550/6550)
@@ -35,9 +41,9 @@
 * Geng Yan Special Topics in Computing: Deep Learning and Generative AI (CSCI 4900)
 * Jin Sun Special Topics in Computing: The Deep Learning Approach (CSCI 4900)
 * Topics in Artificial Intelligence (ARTI 4900/8000)
-* Undergrad Research Thesis (or Final Project) in AI (ARTI 4990R)
 * Faculty-Mentored Undergraduate Research in AI (ARTI 4960R)
 * Data Science Capstone Course (CSCI 4990)
+* Undergrad Research Thesis (or Final Project) in AI (ARTI 4990R)
 * Knowledge Based Systems (CSCI 8050)
 * Trustworthy Machine Learning (CSCI 8265)
 * Data Science Practicum (CSCI 8360)
@@ -51,9 +57,13 @@
 * Machine Learning (CSCI/ARTI 8950)
 * Advanced Data Analytics (CSCI 8955)
 * Privacy-Preserving Data Analysis (CSCI 8960)
+* Introduction to Geospatial Artificial Intelligence (GEOG 6591)
+* Advanced Geospatial Artificial Intelligence (GEOG 6592)
+* Geospatial Semantics and Geo-Text Mining (GEOG 6593)
+* Machine Learning with Geospatial Big Data (GEOG 8350)
 * Experiential Data Specialization - Foundations (INFO 2000)
 * Experiential Data Specialization - Intermediate (INFO 3000)
-* Experiential Data Specialization (INFO 4000)
+* Experiential Data Specialization - Advanced Level (INFO 4000)
 * Engineering Informatics (INFO 4150)
 * Introduction to Industrial Internet of Things (INFO 4160)
 * Foundations of Informatics for Research and Practice (ENGR 8000)
@@ -66,24 +76,22 @@
 * Numerical Analysis I (MATH 4500)
 * Probability (MATH 4600)
 * Matrix and Integral Transforms (MATH 4650)
+* Data Management and Analytics (MIST 4610)
+* Business Intelligence Systems (MIST 7730)
+* Business Intelligence (MIST 7770)
+* Symbolic Logic (PHIL 2500)
+* Topics in Symbolic Logic (PHIL 3510)
 * Introductory Statistics (STAT 2000)
 * Programming and Data Literacy Using R (STAT 2360-2360L)
 * Statistical Methods (STAT 4210)
 * Applied Regression Analysis (STAT 4230)
 * Network Data Analysis and Graphical Models (STAT 4270)
-* Design and Analysis of Complex Computer Models (STAT 4440)
 * Applied Bayesian Statistics (STAT 4350)
 * Advanced Statistical Programming (STAT 4355)
 * Modern Statistical Programming (STAT 4365)
+* Design and Analysis of Complex Computer Models (STAT 4440)
 * Mathematical Statistics I (STAT 4510)
 * Network Data Analysis and Graphical Models (STAT 8470)
-* Introduction to Geospatial Artificial Intelligence (GEOG 6591)
-* Advanced Geospatial Artificial Intelligence (GEOG 6592)
-* Geospatial Semantics and Geo-Text Mining (GEOG 6593)
-* Machine Learning with Geospatial Big Data (GEOG 8350)
-* Data Management and Analytics (MIST 4610)
-* Business Intelligence Systems (MIST 7730)
-* Business Intelligence (MIST 7770)
 
 ## Communities
 * Discord Groups
