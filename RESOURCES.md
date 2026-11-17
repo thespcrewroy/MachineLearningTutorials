@@ -111,7 +111,6 @@
 - [DALL-E 3 Research Paper](https://cdn.openai.com/papers/dall-e-3.pdf): OpenAI's official paper on the DALL-E 3 image generation model
 - [DataCamp](https://www.datacamp.com/): interactive data science and machine learning courses online
 - [Deep Learning (Goodfellow, Bengio, Courville)](https://www.deeplearningbook.org/): free online textbook covering deep learning theory and practice
-- [Deep Learning Specialization (Andrew Ng)](https://www.coursera.org/specializations/deep-learning): DeepLearning.AI's deep learning course series on Coursera
 - [Fast.ai](https://www.fast.ai/): practical deep learning courses taught top-down for coders
 - [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/chapter1/1): free course on NLP with transformers and the Hugging Face ecosystem
 - [Hung-yi Lee Machine Learning Course (NTU)](https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.php): lectures on self-attention, transformers, and GANs (Mandarin, English slides)
