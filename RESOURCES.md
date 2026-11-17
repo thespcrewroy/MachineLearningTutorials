@@ -78,6 +78,7 @@
 * Advanced Geospatial Artificial Intelligence (GEOG 6592)
 * Geospatial Semantics and Geo-Text Mining (GEOG 6593)
 * Machine Learning with Geospatial Big Data (GEOG 8350)
+* Data Management and Analytics (MIST 4610)
 * Business Intelligence Systems (MIST 7730)
 * Business Intelligence (MIST 7770)
 
