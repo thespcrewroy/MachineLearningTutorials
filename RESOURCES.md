@@ -81,6 +81,8 @@
 * Business Intelligence (MIST 7770)
 * Symbolic Logic (PHIL 2500)
 * Topics in Symbolic Logic (PHIL 3510)
+* Actuarial Finance Math (RMIN 4100)
+* Actuarial Probability Concepts (RMIN 4200)
 * Introductory Statistics (STAT 2000)
 * Programming and Data Literacy Using R (STAT 2360-2360L)
 * Statistical Methods (STAT 4210)
