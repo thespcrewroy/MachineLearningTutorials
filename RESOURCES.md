@@ -97,7 +97,7 @@
     * [Dr. Johnsen's Office](https://discord.gg/N72mNjG2Bu): academic community for communicating with Dr. Johnsen, discussing coursework, and receiving assistance
     * [Applied CS VIPR](https://discord.gg/V4MCtPPPwg): community for collaborating on applied computer science projects, research, and technical discussions
 * Meetup
-    * [Atlanta AI Developers](https://www.meetup.com/aittg-atlanta/?eventOrigin=your_groups): Atlanta-based community connecting AI developers through technical discussions, networking, and events
+    * [Atlanta AI Developers](https://www.meetup.com/aittg-atlanta/?eventOrigin=your_groups): Atlanta-based community connecting AI developers through technical discussions
     * [Data Science DAWGS of Athens](https://www.meetup.com/datasciencedawgsathens/?eventOrigin=your_groups): Athens-based community for data science enthusiasts
 
 ## Competitions
