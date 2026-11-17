@@ -120,6 +120,7 @@
 ## Resources
 - [AI Expert Roadmap](https://github.com/AMAI-GmbH/AI-Expert-Roadmap): step-by-step visual guide to becoming an AI practitioner
 - [Andrew Ng Courses](https://www.andrewng.org/courses/): AI pioneer's free courses on machine learning and deep learning
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/#toc): free online book teaching Python through practical automation projects
 - [Carnegie Mellon AI Curriculum](https://www.cs.cmu.edu/bs-in-artificial-intelligence/curriculum): CMU's open AI and machine learning curriculum
 - [DALL-E 3 Research Paper](https://cdn.openai.com/papers/dall-e-3.pdf): OpenAI's official paper on the DALL-E 3 image generation model
 - [DataCamp](https://www.datacamp.com/): interactive data science and machine learning courses online
