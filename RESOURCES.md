@@ -15,6 +15,7 @@
 ## College Certificates
 
 ## College Courses
+* Predictive Modeling and Optimization (BUSN 4000)
 * Symbolic Logic (PHIL 2500)
 * Topics in Symbolic Logic (PHIL 3510)
 * Artificial Intelligence and the Web (CSCI 4330/6330)
