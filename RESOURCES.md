@@ -13,6 +13,7 @@
 ## College Minors
 
 ## College Certificates
+* Actuarial Science
 
 ## College Courses
 * Applied Statistics and Data Analysis for Business (BUSN 3000)
