@@ -104,7 +104,7 @@
 * Network Data Analysis and Graphical Models (STAT 8470)
 
 ## Communities
-* Discord Groups
+* Discord
     * [AI Futures](https://discord.gg/8hca6bytqU): community discussing artificial intelligence, emerging technologies, and the future of AI
     * [PerplexityAI](https://discord.gg/sY9PDCNAXd): community for discussing Perplexity's AI-powered search engine, features, and applications
     * [Deep Learning @ UGA](https://discord.gg/xvRUdddVaT): University of Georgia community focused on deep learning, neural networks, and machine learning
