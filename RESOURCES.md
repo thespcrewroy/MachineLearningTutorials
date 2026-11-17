@@ -101,7 +101,7 @@
     * [Data Science DAWGS of Athens](https://www.meetup.com/datasciencedawgsathens/?eventOrigin=your_groups)
 
 ## Competitions
-* [1 September - 15 November] [Putnam Competition](https://maa.org/math-competitions/william-lowell-putnam-mathematical-competition): premier undergrad mathematics competition
+* [1 September] [Putnam Competition](https://maa.org/math-competitions/william-lowell-putnam-mathematical-competition): premier undergrad mathematics competition
 * [1 November] [AIATL](https://www.aiatl.io/): an Atlanta hackathon focused on artificial intelligence
 * [3 February] [Hacklytics](https://hacklytics.io/): Georgia Tech’s data science and AI hackathon
 * [2 March] [UGA GenAI Competition](https://genaicontest.lmharding.com/gac-year-4/): submit a GenAI project that improves the lived experience of UGA community members
