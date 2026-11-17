@@ -15,6 +15,7 @@
 ## College Certificates
 
 ## College Courses
+* Applied Statistics and Data Analysis for Business (BUSN 3000)
 * Predictive Modeling and Optimization (BUSN 4000)
 * Symbolic Logic (PHIL 2500)
 * Topics in Symbolic Logic (PHIL 3510)
