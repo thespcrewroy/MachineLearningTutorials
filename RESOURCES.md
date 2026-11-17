@@ -7,6 +7,8 @@
 * Actuary Examination SRM (Statistics for Risk Modeling)
 * Actuary Examination PA (Predictive Analytics)
 * Actuary Examination ATPA (Advanced Topics in Predictive Analysis)
+* AWS AI Practitioner
+* CompTIA SecAI+
 
 ## College Majors
 
