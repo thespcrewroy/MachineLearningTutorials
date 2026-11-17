@@ -62,9 +62,11 @@
         - **[Mixboard](https://labs.google.com/mixboard/welcome)**: Google Labs' AI concept board for generating and remixing visual ideas
         - **[Nano Banana](https://gemini.google/overview/image-generation/)**: Gemini's fast image generation and editing model
     - **AI Music Generation**
+        - **[Flow Music](https://www.flowmusic.app/)**: Google's AI music studio for generating full-length songs, vocals, instrumentals, and remixes
         - **[Lyria 3](https://deepmind.google/models/lyria/)**: Google DeepMind's full-track song model with lyrics, vocals, and instruments
         - **[MusicFX DJ](https://labs.google/fx/tools/music-fx-dj)**: Google Labs tool for generating short music pieces and background tracks
         - **[Songer](http://songer.co)**: generates songs in under 60 seconds
+        - **[Suno](https://suno.com/)**: AI music generation platform for creating complete songs with vocals, lyrics, and instruments
     - **AI Video Generation**
         - **[Flow](https://labs.google/fx/tools/flow)**: Google's AI filmmaking platform built on Veo
         - **[Gemini Omni](https://gemini.google.com/)**: Google's multimodal model that generates physics-consistent video from any input
