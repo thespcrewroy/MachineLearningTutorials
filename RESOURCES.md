@@ -14,7 +14,15 @@
 * Artificial Intelligence: Masters
 * Computer Science: Applied Data Science Emphasis
 * Computer Science: Artificial Intelligence (AI) Emphasis
+* Cognitive Science
 * Data Science
+* Math
+* Statistics
+
+## College Minors
+* Cognitive Science
+* Data Science
+* Linguistics
 * Math
 * Statistics
 
