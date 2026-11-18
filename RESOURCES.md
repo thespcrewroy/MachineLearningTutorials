@@ -62,7 +62,6 @@
 * Trustworthy Machine Learning (CSCI 8265)
 * Data Science Practicum (CSCI 8360)
 * Advanced Topics in Information Systems (CSCI 8380)
-* Multi Robot Systems (CSCI 8535)
 * Logic and Logic Programming (CSCI/PHIL 8650)
 * Computer Vision and Pattern Recognition (CSCI 8820)
 * Decision Making Under Uncertainty (CSCI 8920)
