@@ -109,6 +109,7 @@
 * Data Engineering (MIST 5757)
 * Business Intelligence Systems (MIST 7730)
 * Business Intelligence (MIST 7770)
+* Applied AI (NMIX 4013)
 * Introduction to Philosophy (PHIL 2010)
 * Symbolic Logic (PHIL 2500)
 * Topics in Symbolic Logic (PHIL 3510)
