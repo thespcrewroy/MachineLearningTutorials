@@ -31,8 +31,7 @@
 * Applied Data Sceince
 * Artificial Intelligence: Franklin
 * Artificial Intelligence: Terry
-* Computer Science
-* Informatics
+* ⭐️ Informatics
 
 ## College Courses
 * Applied Statistics and Data Analysis for Business (BUSN 3000)
@@ -44,7 +43,7 @@
 * Artificial Intelligence and the Web (CSCI 4330/6330)
 * Ethics and Artificial Intelligence (ARTI/PHIL 4340/6340)
 * Data Science II (CSCI 4360)
-* Data Mining (CSCI 4380/6380)
+* ⭐️ Data Mining (CSCI 4380/6380)
 * Deductive Systems (PHIL/LING 4510/6510)
 * Symbolic Programming (CSCI/ARTI 4540/6540)
 * Artificial Intelligence (CSCI/PHIL 4550/6550)
@@ -52,7 +51,7 @@
 * Natural Language Processing (LING 4570/6570)
 * Reinforcement Learning (ARTI 4600/6600)
 * Biomedical Image Analysis (CSCI 4850)
-* Geng Yan Special Topics in Computing: Deep Learning and Generative AI (CSCI 4900)
+* ⭐️ Geng Yan Special Topics in Computing: Deep Learning and Generative AI (CSCI 4900)
 * Jin Sun Special Topics in Computing: The Deep Learning Approach (CSCI 4900)
 * Topics in Artificial Intelligence (ARTI 4900/8000)
 * Faculty-Mentored Undergraduate Research in AI (ARTI 4960R)
@@ -75,21 +74,21 @@
 * Advanced Geospatial Artificial Intelligence (GEOG 6592)
 * Geospatial Semantics and Geo-Text Mining (GEOG 6593)
 * Machine Learning with Geospatial Big Data (GEOG 8350)
-* Experiential Data Specialization - Foundations (INFO 2000)
-* Experiential Data Specialization - Intermediate (INFO 3000)
-* Experiential Data Specialization - Advanced Level (INFO 4000)
+* ⭐️ Experiential Data Specialization - Foundations (INFO 2000)
+* ⭐️ Experiential Data Specialization - Intermediate (INFO 3000)
+* ⭐️ Experiential Data Specialization - Advanced Level (INFO 4000)
 * Engineering Informatics (INFO 4150)
 * Introduction to Industrial Internet of Things (INFO 4160)
 * Foundations of Informatics for Research and Practice (ENGR 8000)
 * Advanced Programming for Data Mining (INFO 8750)
 * The Study of Language (LING 2100)
-* Calculus I for Science and Engineering (MATH 2250)
-* Calculus II for Science and Engineering (MATH 2260)
+* ⭐️ Calculus I for Science and Engineering (MATH 2250)
+* ⭐️ Calculus II for Science and Engineering (MATH 2260)
 * Multivariable Calculus (MATH 2500)
 * Differential Equations (MATH 2700)
 * Sequences and Series (MATH 3100)
 * Introduction to Higher Mathematics (MATH 3200)
-* Applied Linear Algebra (MATH 3300)
+* ⭐️ Applied Linear Algebra (MATH 3300)
 * Numerical Analysis I (MATH 4500)
 * Probability (MATH 4600)
 * Matrix and Integral Transforms (MATH 4650)
@@ -118,7 +117,7 @@
 * Cognitive Psychology (PSYC 4100)
 * Actuarial Finance Math (RMIN 4100)
 * Actuarial Probability Concepts (RMIN 4200)
-* Introductory Statistics (STAT 2000)
+* ⭐️ Introductory Statistics (STAT 2000)
 * Programming and Data Literacy Using R (STAT 2360-2360L)
 * Statistical Methods (STAT 4210)
 * Applied Experimental Design (STAT 4220)
