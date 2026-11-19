@@ -196,13 +196,15 @@
 - **Benchmark Dataset**
     - **[CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)**: 60,000 small color images in 10 classes for image classification
     - **[COCO (Common Objects in Context)](https://cocodataset.org/)**: 328,000 everyday images labeled for detection, segmentation, and captioning
-    - **[Common Crawl](https://commoncrawl.org/)**: free, open archive of billions of web pages used to train LLMs
+    - **[Common Crawl](https://commoncrawl.org/)**: free open archive of billions of web pages used to train LLMs
     - **[DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/)**: 1,000 high-resolution images, the standard super-resolution training set
     - **[FFHQ (Flickr-Faces-HQ)](https://github.com/NVlabs/ffhq-dataset)**: 70,000 high-quality face images used to train StyleGAN
     - **[ImageNet](https://www.image-net.org/)**: over 14 million images in thousands of classes, the classic vision benchmark
     - **[Intel Image Classification](https://www.kaggle.com/datasets/puneet6060/intel-image-classification)**: 25,000 scene images in 6 classes like forest and street
+    - **[Iris](https://www.kaggle.com/datasets/uciml/iris)**: benchmark for testing statistical classification, clustering, and machine learning algorithms
     - **[KITTI](https://www.cvlibs.net/datasets/kitti/)**: driving camera and LiDAR data for 3D object detection and tracking
     - **[MNIST](https://huggingface.co/datasets/ylecun/mnist)**: 70,000 handwritten digit images, the classic starter dataset
+    - **[NSL-KDD](https://www.kaggle.com/datasets/hassan06/nslkdd)**: a classic network intrusion detection benchmark
     - **[nuScenes](https://www.nuscenes.org/)**: full-sensor self-driving dataset from Boston and Singapore streets
     - **[PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/)**: 20-class object detection and segmentation benchmark
     - **[Speech Commands](https://huggingface.co/datasets/google/speech_commands)**: one-second clips of spoken words for keyword spotting
