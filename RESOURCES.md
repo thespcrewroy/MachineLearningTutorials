@@ -79,7 +79,7 @@
 * Machine Learning with Geospatial Big Data (GEOG 8350)
 * ⭐️ Experiential Data Science Specialization - Foundations (INFO 2000)
 * ⭐️ Experiential Data Science Specialization - Intermediate (INFO 3000)
-* ⭐️ Experiential Data Science Specialization - Advanced Level (INFO 4000)
+* ⭐️ [Experiential Data Science Specialization - Advanced Level (INFO 4000)](https://tinyurl.com/2h6szwuf) | [Supplemental](https://tinyurl.com/32uwcsjy)
 * Engineering Informatics (INFO 4150)
 * Introduction to Industrial Internet of Things (INFO 4160)
 * Faculty-Mentored Undergraduate Research (INFO 4960R)
