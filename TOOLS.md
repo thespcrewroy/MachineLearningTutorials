@@ -38,6 +38,8 @@
     - **[LearnYourWay](https://learnyourway.withgoogle.com/)**: Google study tool that helps you learn concepts instead of just memorizing
 - **[AlphaGeometry](https://github.com/google-deepmind/alphageometry)**: DeepMind's system that solves olympiad-level geometry problems
 - **Audio Analysis**
+    - **ASR (Automatic Speech Recognition)**
+        - **[Whisper](https://github.com/openai/whisper)**: OpenAI's open-source speech recognition and translation model
     - **[librosa](https://librosa.org/doc/latest/)**: Python package for music and audio analysis and feature extraction
 - **Computer Vision**
     - **[GeoSpy](https://geospy.ai/)**: AI-powered tool that identifies the geographic location of photos

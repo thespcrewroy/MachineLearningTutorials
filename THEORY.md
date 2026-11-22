@@ -12,10 +12,10 @@
 - **AI Research Assistant**: an AI tool that searches, reads, and summarizes sources to answer questions
 - **AI Tutor**: an AI tool that adapts explanations and practice to help a learner understand material
 - **Audio Analysis**: teaching computers to interpret sound such as speech, music, or environmental noise
+    - **ASR (Automatic Speech Recognition)**: converting spoken audio into text
     - **MFCC (Mel-Frequency Cepstral Coefficients)**: compact features that summarize a sound's spectrum
     - **Spectrogram**: a picture of how a sound's frequencies change over time
         - **Mel Spectrogram**: a spectrogram rescaled to the Mel scale to match how humans hear pitch
-    - **Speech Recognition**: converting spoken audio into text
 - **Computer Vision**: teaching computers to interpret and understand images and video
     - **Image Classification**: assigning one label to a whole image, such as "cat" or "truck"
     - **Image Segmentation**: splitting an image into regions to separate objects from the background
