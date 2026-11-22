@@ -53,7 +53,7 @@
     - **Super-Resolution**
         - **[Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)**: open-source GAN-based upscaler for photos and anime images
 - **Deepfake**
-    - **[Roop Unleashed](https://github.com/C0untFloyd/roop-unleashed)**: open-source face-swapping tool for images and video
+    - **[Roop Unleashed](https://www.reddit.com/r/StableDiffusion/comments/1ikkall/roopunleashed_faceswap_final_version/)**: open-source face-swapping tool for images and video
 - **Generative AI**
     - **AI Image Generation**
         - **[Bing Image Creator](https://www.bing.com/images/create)**: Microsoft's free text-to-image generator
