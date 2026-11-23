@@ -192,7 +192,7 @@
 - **MQTT (Message Queuing Telemetry Transport)**
     - **[Eclipse Paho MQTT](https://github.com/eclipse-paho/paho.mqtt.python)**: Python client for publishing and subscribing to MQTT topics
     - **MQTT Broker**
-        - **[Eclipse Mosquitto](https://mosquitto.org/documentation/)**: open-source MQTT broker, with a free public test server
+        - **[Eclipse Mosquitto](https://mosquitto.org/documentation/)**: open-source MQTT broker with a free public test server
 
 ## Machine Learning
 - **Benchmark Dataset**
