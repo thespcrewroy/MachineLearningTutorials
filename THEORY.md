@@ -57,6 +57,8 @@
     - **Open-Weight Model**: a model whose trained weights are publicly released for anyone to run or fine-tune
         - **Gated Model**: an open-weight model you must accept a license for and use a token to download
     - **Pretraining**: training a model from scratch on a large unlabeled corpus
+    - **RLHF (Reinforcement Learning from Human Feedback)**: training an LLM with rewards based on human preferences
+    - **RLVR (Reinforcement Learning with Verifiable Rewards)**: rewarding checkable answers like math or code to teach reasoning
     - **Training Cutoff (Knowledge Cutoff)**: the date after which a model knows nothing because its training data ends
 - **Model Hub**: a platform for sharing and downloading pretrained models, datasets, and demos
     - **Model Card**: documentation of a model's intended uses, limitations, and biases
@@ -119,6 +121,7 @@
         - **Cosine Similarity**: measures how alike two vectors are by the angle between them
         - **Semantic Similarity**: how close two pieces of data are in meaning
         - **Vector Space**: the space embeddings live in, where distance or angle shows similarity
+- **Rule-Based System (Expert System)**: AI that follows fixed, hand-written rules instead of learning
 
 ## Big Data
 - **Data Lakehouse**: combines a data lake's cheap, flexible storage with a warehouse's structured querying
@@ -328,6 +331,7 @@
     - **Adam (Adaptive Moment Estimation)**: gradient descent that adapts each parameter's learning rate
     - **Batch Size**: the number of samples processed together in one training step
         - **Mini-Batch**: a small group of training samples processed together in one step
+    - **Convergence**: the point where values stop changing with more training
     - **Epoch**: one full pass of the training data through a model
     - **Learning Rate**: the step size gradient descent takes on each update
         - **Learning Rate Schedule**: lowers the learning rate during training, e.g. step or exponential decay
@@ -373,16 +377,63 @@
     - **L1 Regularization (Lasso)**: adds the absolute value of weights as a penalty, which can shrink some weights to zero
     - **L2 Regularization (Ridge)**: adds the squared value of weights as a penalty, which keeps all weights small
 - **Reinforcement Learning**: training an agent to take actions that maximize rewards through trial and error
+    - **Action**: a choice the agent can make, such as a move or a decision
+        - **Action Space**: the set of valid actions an agent can take
+            - **Continuous Action Space**: actions that take any value in a range, like how far to turn a wheel
     - **Actor-Critic**: pairs a policy network that picks actions with a value network that scores them
+        - **A2C (Advantage Actor-Critic)**: an actor-critic algorithm that updates using the advantage function
+        - **Actor (Policy Network)**: the network that learns the policy, mapping states to actions
+        - **Advantage Function**: how much better an action turned out than the critic expected for that state
+        - **Critic (Value Network)**: the network that estimates the value function and gives the actor feedback
         - **PPO (Proximal Policy Optimization)**: an actor-critic method that keeps each policy update small
+            - **Clipping**: limiting the probability ratio to a small range around 1 so one lucky result can't swing it
+            - **Probability Ratio**: how much more or less likely the new policy is to take an action than the old one
+        - **SAC (Soft Actor-Critic)**: an actor-critic algorithm for continuous actions that rewards some randomness
+        - **TD3 (Twin Delayed DDPG)**: an actor-critic algorithm for continuous actions that uses two critics
+    - **Agent**: the learner or decision maker, such as a robot, program, or game character
+    - **AlphaGo**: DeepMind's RL program, the first to beat a professional human Go player
     - **AlphaZero**: DeepMind's self-play algorithm that mastered chess, shogi, and Go using tree search and neural networks
     - **Bellman Equation**: defines a state's value as its reward plus the discounted value of the next state
+    - **Discount Factor (γ)**: a value between 0 and 1 that makes future rewards worth less than immediate ones
+    - **Episode**: one full run from a starting state until a terminal state
+        - **Episode Limit**: the maximum number of moves before an episode ends, even without a terminal state
+        - **Terminal State**: a state where an episode ends, like winning or losing a game
+    - **Explore-Exploit Tradeoff**: balancing trying new actions to learn with using known good ones to earn reward
+        - **Exploitation**: choosing the action currently known to give the best return
+        - **Exploration**: trying new or random actions to learn more about the environment
+    - **MDP (Markov Decision Process)**: the framework of states, actions, rewards, and transitions behind RL
+        - **Markov Property**: the next state depends only on the current state and action, not the full history
+    - **Model-Based RL**: the agent knows or learns how the environment behaves, so it can plan ahead
+    - **Model-Free RL**: the agent learns only by acting and observing results, treating the environment as a black box
     - **Policy**: the strategy an RL agent uses to choose an action in each state
         - **Epsilon-Greedy Policy**: takes the best-known action but explores randomly with probability ε
+        - **Optimal Policy**: the policy that earns the highest return from every state
+        - **Policy Gradient**: methods that adjust the policy directly instead of learning Q values first
     - **Q-Learning**: learns a table of how valuable each action is in each state
         - **DQN (Deep Q-Network)**: Q-learning that swaps the table for a neural network
             - **Experience Replay**: training on random batches of stored past transitions to stabilize learning
+                - **Replay Buffer**: a fixed-size store of past transitions that experience replay samples from
+                    - **Experience Tuple**: one stored transition of state, action, reward, done flag, and next state
+            - **Q-Network**: the main DQN network that takes a state and predicts a Q value for every action
+            - **Target Network**: a slowly updated copy of the Q-network that gives stable training targets
+        - **Function Approximator**: a model, usually a neural network, that estimates Q values instead of a table
+        - **Q-Function (Action-Value Function)**: Q(s,a), the return from taking action a in state s, then acting optimally
+        - **Q-Table**: a table of estimated Q values with a row for each state and a column for each action
+        - **TD Error (Temporal Difference Error)**: the gap between a new Q estimate and the current one
+    - **Return (Cumulative Reward)**: the sum of rewards over time, with future rewards discounted
+    - **Reward**: feedback after an action; positive rewards encourage a behavior and negative ones discourage it
+        - **Reward Function**: the rule that decides what reward the agent gets for each action and state
     - **RL Environment**: a simulated world that an RL agent observes, acts in, and gets rewards from
+        - **Environment Dynamics**: the rules for how the environment changes in response to the agent's actions
+    - **Sim-to-Real**: training an agent in simulation, then deploying its policy on a real robot
+        - **Online Fine-Tuning**: continuing to train an agent on real-world experience after deployment
+    - **State**: the agent's current situation, such as its position and the condition of the environment
+        - **Observation**: the part of the state the agent can see, such as a screenshot or a vector of values
+        - **State Space**: the set of all states an environment can be in
+            - **Continuous State Space**: states that take any value in a range, too many for a Q-table to list
+            - **Discrete State Space**: a fixed, countable set of states, such as a grid or a card game
+    - **Time Step**: one cycle of seeing a state, taking an action, and getting a reward and the next state
+    - **Value Function (State-Value Function)**: V(s), the expected return from a state when following the policy
 - **Robustness**: how well a model stays accurate when its inputs are noisy, shifted, or perturbed
 - **Supervised Learning**: training models on labeled data to predict outputs from inputs
     - **Classification**: predicting which category an input belongs to
@@ -406,6 +457,7 @@
         - **Sequential Covering**: learns rules one at a time, removing the examples each covers
     - **SVM (Support Vector Machine)**: finds the boundary that separates classes with the widest margin
         - **Kernel**: a similarity function that lets an SVM draw non-linear boundaries
+- **Synthetic Data**: artificially generated data, such as simulated experiences, used to supplement real data
 - **Training Loop**: repeating the forward pass, loss calculation, backpropagation, and weight update
 - **Transfer Learning**: reusing a model trained on one task as the starting point for another
     - **Classifier Head (Model Head)**: the final layers that turn features into predictions, replaced to fit a new task
@@ -468,6 +520,10 @@
 - **Linear Optimization**: finding the best outcome of a linear objective subject to linear constraints
 - **Numerical Analysis**: algorithms for approximating mathematical solutions on computers
     - **RK4 (Fourth-Order Runge-Kutta)**: steps through a differential equation's solution with high accuracy
+- **Optimization**: finding the best solution to a problem under given conditions
+    - **Dynamic Programming**: solving a problem by breaking it into subproblems and reusing their answers
+    - **Global Optimum**: the best possible solution across all options
+    - **Local Optimum**: the best solution among nearby options, but not the best overall
 - **Probability**: the mathematics of uncertainty and how likely events are
     - **Bayes' Theorem**: computes a probability from the reverse conditional probability and a prior
     - **Normal (Gaussian) Distribution**: the bell-shaped distribution defined by a mean and standard deviation
@@ -477,6 +533,8 @@
         - **Bayesian Network**: a graph of variables and their conditional dependencies
     - **Correlation**: how strongly two variables move together, from −1 to +1
         - **Multicollinearity**: when input features are highly correlated, making model estimates unstable
+    - **Dependent Variable (Response Variable)**: the value a model predicts, also called the y variable
+    - **Independent Variable (Explanatory Variable)**: an input a model uses to predict, also called the x variable
     - **Levels of Measurement**: nominal, ordinal, interval, and ratio scales that decide which math applies
     - **Multivariate Analysis**: analyzing several variables at once to understand how they relate
     - **Simpson's Paradox**: a trend in separate groups that reverses when the groups are combined

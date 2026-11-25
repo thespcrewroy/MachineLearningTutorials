@@ -266,6 +266,8 @@
 - **Reinforcement Learning**
     - **RL Environment**
         - **[Gymnasium](https://gymnasium.farama.org/)**: standard API and suite of RL environments, successor to OpenAI Gym
+        - **[MuJoCo](https://mujoco.readthedocs.io/)**: physics engine for multi-joint robot control environments
+        - **[NVIDIA Isaac Lab (formerly Isaac Gym)](https://isaac-sim.github.io/IsaacLab/)**: GPU-accelerated robot simulator for training RL policies
     - **[Stable-Baselines3](https://stable-baselines3.readthedocs.io/)**: reliable PyTorch implementations of RL algorithms like PPO and DQN
 - **Transfer Learning**
     - **Fine-Tuning**
