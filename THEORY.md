@@ -1,15 +1,35 @@
 ## Artificial Intelligence
+- **Agentic AI**: multiple collaborating AI agents with high autonomy that set goals and coordinate complex work
+    - **Autonomy**: the ability to make decisions and act without explicit human prompts
 - **AI Agent**: an AI system that plans and takes multi-step actions with tools to complete a goal
+    - **Advisory Agent**: an agent that observes, diagnoses, and recommends but doesn't directly control anything
+    - **Agent Loop**: decide, act, and observe, repeated until the model can answer or hits a step limit
+    - **Agent Memory**: the running list of messages, tool calls, and results so far
+    - **Agent Trace**: the log of every step an agent took, used to debug and audit what it really did
     - **Agentic Browser**: a web browser with a built-in AI agent that can navigate and act on pages for you
     - **Agentic Workflow**: a fixed sequence of LLM and tool steps where code, not the model, controls the flow
     - **AI Coding Agent**: an AI agent that plans, writes, tests, and submits code changes with limited supervision
     - **MCP (Model Context Protocol)**: an open standard for connecting AI models to external tools and data sources
+        - **MCP Client**: the part of a host app that speaks MCP to connect to servers
+        - **MCP Host**: the AI application the user interacts with, which contains MCP clients
+        - **MCP Prompt**: a reusable prompt template an MCP server exposes
+        - **MCP Resource**: data an MCP server lets the model read
+        - **MCP Server**: a program that wraps an outside system and exposes it to AI apps as tools
+        - **MCP Tool**: an action the model can ask an MCP server to run
+        - **MCP Transport**: how client and server talk, stdio for a local subprocess or HTTP for a remote server
     - **Multi-Agent Orchestration**: coordinating several specialized AI agents that divide and hand off work
+        - **Agent Role**: one agent's single job, defined by a system prompt and the tools it may use
+        - **Handoff**: structured data, like JSON, passed between agents instead of free prose
+        - **Orchestrator**: plain code that passes work between agents and handles order, retries, and stop rules
+        - **Peer Agents**: agents that call each other directly, the most flexible and hardest to control
+        - **Supervisor Agent**: a model that reads results and picks which agent runs next
     - **Tool Calling**: a model requesting a function with structured arguments, which code then runs
+        - **Code Interpreter**: a tool that lets an LLM run the code it writes and use the computed result
 - **AI Alignment**: making AI systems behave according to human intentions and values
 - **AI Bias (Model Bias)**: unfair prejudice a model learns from its training data, which fine-tuning does not remove
 - **AI Coding Assistant**: an editor plugin that suggests and completes code using AI
 - **AI Guardrails**: limits on what an AI system may do or say, like allowed tools, step caps, or output checks
+    - **Human-in-the-Loop (Human Gate)**: requiring a person to approve anything an AI writes, spends, or ships
 - **AI Research Assistant**: an AI tool that searches, reads, and summarizes sources to answer questions
 - **AI Tutor**: an AI tool that adapts explanations and practice to help a learner understand material
 - **Audio Analysis**: teaching computers to interpret sound such as speech, music, or environmental noise
@@ -158,6 +178,7 @@
         - **Truncation**: cutting sequences longer than a model's maximum length
     - **Word2Vec**: learns word embeddings from the words around each word, using CBOW or skip-gram
 - **Prompt Engineering**: designing and refining model inputs to get accurate, useful outputs
+    - **System Prompt**: instructions that set a model's role, rules, and when to stop
 - **RAG (Retrieval-Augmented Generation)**: improving LLM answers by retrieving relevant documents and adding them to the prompt
     - **Chunking**: splitting documents into smaller passages before embedding them for retrieval
         - **Chunk Overlap**: repeating some text between neighboring chunks so context isn't lost at the edges
@@ -197,7 +218,9 @@
 ## Business Analytics
 - **BI (Business Intelligence)**: turning business data into dashboards and reports that inform decisions
 - **Business Model Canvas**: a one-page template for mapping a business's value proposition, customers, channels, and costs
+- **Customer Churn**: customers who stop using a product or service, a classic prediction task
 - **KPI (Key Performance Indicator)**: a metric used to judge how well something is performing
+    - **Governed KPI**: a metric from a fixed catalog with one definition and one owner
 - **Market Research**: gathering and analyzing information about markets, competitors, and customers
 - **Spreadsheet**: a grid-based app for organizing, calculating, and charting data
 
@@ -265,6 +288,8 @@
 - **Edge AI**: running AI models directly on local devices, like factory cameras, instead of in the cloud
 - **Home Automation**: controlling lights, locks, and appliances automatically through connected devices
 - **IIoT (Industrial Internet of Things)**: connected sensors and machines in factories, plants, and other industry
+    - **CMMS (Computerized Maintenance Management System)**: software that tracks equipment, maintenance, and work orders
+    - **Predictive Maintenance**: using sensor data to predict which equipment will fail so it can be serviced first
 - **LPWAN (Low-Power Wide-Area Network)**: long-range, low-power networks for IoT devices that send small data
     - **LTE-M**: a low-power cellular standard for IoT devices
     - **NB-IoT (Narrowband IoT)**: a low-power cellular standard for small, infrequent IoT messages

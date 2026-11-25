@@ -23,6 +23,7 @@
     - **[Claude Duet](https://claude.com/product/claude-duet)**: always-on agents that keep working on tasks across your connected apps
     - **[Jev](https://docs.typesafe.ai/introduction/quickstart)**: TypeSafe AI's model that returns typed answers and probabilities for fast agent decisions
     - **MCP (Model Context Protocol)**
+        - **[MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector)**: browser tool for listing and testing an MCP server's tools
         - **[MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)**: official Python SDK for building MCP servers and clients
     - **[Meta Muse](https://ai.meta.com/muse/)**: always-on agents that keep working on tasks across your connected apps
     - **Multi-Agent Orchestration**
