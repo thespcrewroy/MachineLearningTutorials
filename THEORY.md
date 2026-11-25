@@ -185,6 +185,8 @@
 - **Rule-Based System (Expert System)**: AI that follows fixed, hand-written rules instead of learning
 
 ## Big Data
+- **Data Ingestion**: bringing data in from files, streams, databases, MQTT, or APIs
+    - **Streaming Data**: data that arrives continuously in real time, such as sensor readings
 - **Data Lakehouse**: combines a data lake's cheap, flexible storage with a warehouse's structured querying
 - **Data Warehouse**: a central repository optimized for analytical queries over large structured datasets
 - **Distributed Computing**: splitting data storage and processing across a cluster of machines
@@ -195,6 +197,7 @@
 ## Business Analytics
 - **BI (Business Intelligence)**: turning business data into dashboards and reports that inform decisions
 - **Business Model Canvas**: a one-page template for mapping a business's value proposition, customers, channels, and costs
+- **KPI (Key Performance Indicator)**: a metric used to judge how well something is performing
 - **Market Research**: gathering and analyzing information about markets, competitors, and customers
 - **Spreadsheet**: a grid-based app for organizing, calculating, and charting data
 
@@ -241,7 +244,24 @@
 - **Web Scraping**: automatically extracting data from websites
 
 ## IoT (Internet of Things)
+- **Actuator**: a device that physically acts on a system, like a motor or heater, based on a control command
+- **Closed-Loop Control System**: a system whose output is measured and fed back to adjust its input, like a thermostat
+    - **Damping**: reducing oscillation so a system's motion settles smoothly
+    - **Disturbance**: an unexpected outside event that pushes a system away from its set point
+    - **Hysteresis**: separate on and off thresholds around a set point so a system doesn't switch constantly
+        - **Dead Band**: the range around the set point where the controller takes no action
+    - **Oscillation**: a system swinging back and forth around its set point instead of settling
+    - **Overshoot**: how far a system goes past its set point before settling
+    - **Plant (Process)**: the physical system being controlled, such as an oven, drone, or pendulum
+    - **Set Point**: the target value a control system tries to reach, like 22°C on a thermostat
+    - **Settling Time**: the time a system takes to stay within a small range of its set point
+    - **Steady-State Error**: the error left after a system settles
 - **Digital Twin**: a virtual model of a physical system kept in sync with its real-time data
+    - **Calibration**: adjusting a model's parameters to match measurements from the real system
+    - **Commercial Digital Twin**: a twin of a business system, like fraud detection, built on rules or statistics
+    - **Physical Twin**: the real system or object that a digital twin copies
+    - **Shadow Model (Open-Loop Observer)**: a model that runs beside a control loop to predict without affecting it
+    - **Virtual Plant**: a model that stands in for the physical system inside a control loop
 - **Edge AI**: running AI models directly on local devices, like factory cameras, instead of in the cloud
 - **Home Automation**: controlling lights, locks, and appliances automatically through connected devices
 - **IIoT (Industrial Internet of Things)**: connected sensors and machines in factories, plants, and other industry
@@ -255,6 +275,15 @@
     - **Retained Message**: the last message on a topic, which the broker sends to every new subscriber
     - **Topic**: a named channel messages are published to and subscribed from, like home/livingroom/temperature
 - **PID (Proportional-Integral-Derivative) Controller**: a feedback controller that steers a system toward a setpoint
+    - **Derivative Term**: reacts to how fast the error is changing, adding damping (gain Kd)
+        - **Derivative on Measurement**: computing the derivative from the measurement to avoid jumps when the set point changes
+    - **Integral Term**: adds up error over time to remove steady-state error (gain Ki)
+        - **Integral Windup**: the integral term growing too large while an actuator is saturated, causing overshoot
+            - **Anti-Windup**: clamping the integral term between limits so it can't grow without bound
+    - **PI Controller**: a PID controller with the derivative term turned off, enough for slow systems like ovens
+    - **Proportional Term**: corrects in proportion to the current error, where bigger gains can overshoot (gain Kp)
+- **Sensor**: a device that measures real-world data, such as temperature or current
+- **System Identification (Parameter ID)**: estimating unknown system values, like damping, from operating data
 - **Telemetry**: automatically collecting measurements from remote devices and sending them for monitoring
     - **Fleet Telematics**: tracking vehicles' GPS location and sensor data remotely
 
@@ -339,8 +368,10 @@
         - **MLP (Multilayer Perceptron)**: a feedforward network of stacked fully connected layers
         - **Perceptron**: a single artificial neuron that learns a linear decision boundary
         - **PINN (Physics-Informed Neural Network)**: a network whose loss also enforces known physics equations
+            - **Collocation Points**: sampled inputs where the physics loss is checked; they have no labels
             - **Data Loss**: the part of a PINN's loss that measures how well predictions match known data points
             - **Data-Driven Model**: a model that learns relationships purely from observed data
+            - **Hard Constraint**: building a condition, like the initial condition, directly into the network's output
             - **Physics Loss**: the part of a PINN's loss that measures how badly its output breaks the governing equation
                 - **Residual**: what's left when a model's output is plugged into a governing equation; zero means it fits
             - **Physics-Based Model**: a model built from the equations that govern a system rather than learned
@@ -419,6 +450,7 @@
 - **ML Platform**: a managed cloud service for building, training, and deploying ML models
 - **ML Workflow (End-to-End ML Workflow)**: loading and exploring data, training and evaluating a model, then predicting
 - **MLOps (Machine Learning Operations)**: practices for tracking, deploying, and monitoring machine learning models
+    - **Artifact Store**: storage for training outputs, like model weights and normalization values, reused later
     - **Experiment Tracking**: logging the parameters, metrics, and artifacts of training runs so they can be compared
     - **Model Deployment**: serving a trained model so apps and users can request predictions
         - **MaaS (Model as a Service)**: hosting a trained model as a service that other apps call through an API
@@ -599,6 +631,7 @@
 - **Linear Algebra**: the mathematics of vectors, matrices, and linear transformations
 - **Linear Optimization**: finding the best outcome of a linear objective subject to linear constraints
 - **Numerical Analysis**: algorithms for approximating mathematical solutions on computers
+    - **Adaptive Step Size**: changing the time step during a simulation, smaller when things change quickly
     - **Numerical Differentiation**: estimating a derivative from nearby function values instead of exactly
         - **Finite Differences**: approximating a derivative from function values a small step apart
     - **RK4 (Fourth-Order Runge-Kutta)**: steps through a differential equation's solution with high accuracy
@@ -609,6 +642,9 @@
 - **Probability**: the mathematics of uncertainty and how likely events are
     - **Bayes' Theorem**: computes a probability from the reverse conditional probability and a prior
     - **Normal (Gaussian) Distribution**: the bell-shaped distribution defined by a mean and standard deviation
+    - **Stochastic Process**: a sequence of random events unfolding over time
+        - **Hawkes Process**: a self-exciting process where each event temporarily raises the chance of more events
+        - **Poisson Process**: events that happen randomly at a steady average rate
 - **Real Analysis**: the rigorous study of real numbers, limits, continuity, and convergence
 - **Statistics**: collecting, analyzing, and interpreting data to draw conclusions
     - **Bayesian Statistics**: updating the probability of a hypothesis as new evidence arrives
