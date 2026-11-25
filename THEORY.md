@@ -333,6 +333,8 @@
         - **Add & Norm**: adds a layer's input back to its output, then applies layer normalization
         - **Autoencoder**: a network that learns to compress and rebuild its input, often to spot anomalies
             - **Denoising Autoencoder**: learns to rebuild clean inputs from corrupted ones
+            - **Latent Space**: the compressed, lower-dimensional representation an encoder produces
+            - **Reconstruction Error**: the gap between an autoencoder's input and output; high for anomalies
         - **Backpropagation**: computing error gradients layer by layer to update a neural network's weights
             - **Automatic Differentiation**: computing exact derivatives of code automatically, as PyTorch does
             - **Exploding Gradient**: when gradients grow uncontrollably through layers, destabilizing training
@@ -424,6 +426,7 @@
     - **Feature Selection**: keeping only the features that help a model and dropping redundant ones
     - **Feature Transformation**: applying a math function such as a log or square root to a feature
         - **Log Transformation**: replacing values with their logarithm to shrink large values and reduce skew
+        - **Power Transformation**: reshaping a feature to look more Gaussian with functions like log or square root
 - **Generalization**: how well a model performs on new data it has not seen
     - **Extrapolation**: predicting values outside the range of known data, where models without physics are unreliable
     - **Interpolation**: predicting values between known data points
@@ -537,6 +540,7 @@
     - **Time Step**: one cycle of seeing a state, taking an action, and getting a reward and the next state
     - **Value Function (State-Value Function)**: V(s), the expected return from a state when following the policy
 - **Robustness**: how well a model stays accurate when its inputs are noisy, shifted, or perturbed
+- **Self-Supervised Learning**: training where the input itself serves as the target, so no separate labels are needed
 - **Supervised Learning**: training models on labeled data to predict outputs from inputs
     - **Classification**: predicting which category an input belongs to
     - **Decision Boundary**: the line or surface where a classifier switches from one class to another
@@ -573,7 +577,13 @@
 - **Unsupervised Learning**: finding patterns and structure in unlabeled data
     - **Anomaly Detection**: finding rare points or events that deviate from normal behavior
         - **Gaussian Anomaly Detection**: flags points that are unlikely under a Gaussian fit to normal data
+            - **Epsilon Threshold (ε)**: the probability density below which a point is flagged as an anomaly
+        - **Inlier**: a normal data point that fits with the rest of the data, the opposite of an outlier
         - **Isolation Forest**: isolates anomalies with random splits, since outliers need fewer splits
+            - **Path Length**: the number of random splits needed to isolate a point; short paths suggest anomalies
+        - **Novel Anomaly**: an anomaly of a kind never seen before, which supervised detectors miss
+        - **Percentile Threshold**: flagging points whose scores fall in a top or bottom percentile, like the top 5%
+        - **Supervised Anomaly Detection**: training on labeled past anomalies, so it only catches similar ones
     - **Association Rule Mining**: finding if-then rules between items that often occur together
         - **Apriori**: finds frequent itemsets to build association rules, as in market basket analysis
         - **Confidence**: how often a rule's right side appears when its left side does
@@ -587,6 +597,9 @@
         - **Support**: the share of transactions that contain an itemset
     - **Clustering**: grouping similar data points together without predefined labels
         - **DBSCAN**: density-based clustering that labels points in sparse regions as noise
+            - **Border Point**: a point near a core point that has too few neighbors to be a core point itself
+            - **Core Point**: a point with at least min_samples neighbors within distance eps
+            - **Noise Point**: a point that is neither core nor border, labeled -1 and treated as an anomaly
             - **OPTICS**: orders points by density so clusters of varying density can be found
         - **Elbow Method**: picking k where adding more clusters stops reducing error much
         - **Fuzzy C-Means**: soft clustering where each point belongs to every cluster by some degree
@@ -629,6 +642,9 @@
     - **Entropy**: a measure of uncertainty or impurity in data
     - **Mutual Information**: how much knowing one variable reduces uncertainty about another
 - **Linear Algebra**: the mathematics of vectors, matrices, and linear transformations
+    - **Determinant**: a single number computed from a square matrix, written |Σ|
+    - **Inverse Matrix**: the matrix that undoes another when multiplied, written Σ⁻¹
+        - **Singular Matrix**: a square matrix with no inverse, as when features are redundant
 - **Linear Optimization**: finding the best outcome of a linear objective subject to linear constraints
 - **Numerical Analysis**: algorithms for approximating mathematical solutions on computers
     - **Adaptive Step Size**: changing the time step during a simulation, smaller when things change quickly
@@ -641,7 +657,10 @@
     - **Local Optimum**: the best solution among nearby options, but not the best overall
 - **Probability**: the mathematics of uncertainty and how likely events are
     - **Bayes' Theorem**: computes a probability from the reverse conditional probability and a prior
-    - **Normal (Gaussian) Distribution**: the bell-shaped distribution defined by a mean and standard deviation
+    - **Probability Distribution**: describes how likely each value of a variable is
+        - **Normal (Gaussian) Distribution**: the bell-shaped distribution defined by a mean and standard deviation
+            - **Multivariate Gaussian**: a Gaussian over several variables, using a covariance matrix for correlated features
+        - **PDF (Probability Density Function)**: gives how likely values near any given point are
     - **Stochastic Process**: a sequence of random events unfolding over time
         - **Hawkes Process**: a self-exciting process where each event temporarily raises the chance of more events
         - **Poisson Process**: events that happen randomly at a steady average rate
@@ -651,6 +670,8 @@
         - **Bayesian Network**: a graph of variables and their conditional dependencies
     - **Correlation**: how strongly two variables move together, from −1 to +1
         - **Multicollinearity**: when input features are highly correlated, making model estimates unstable
+    - **Covariance**: how two variables change together, positive if they rise together
+        - **Covariance Matrix**: a matrix of each feature's variance on the diagonal and covariances elsewhere
     - **Dependent Variable (Response Variable)**: the value a model predicts, also called the y variable
     - **Independent Variable (Explanatory Variable)**: an input a model uses to predict, also called the x variable
     - **Levels of Measurement**: nominal, ordinal, interval, and ratio scales that decide which math applies
