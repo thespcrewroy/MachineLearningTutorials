@@ -168,6 +168,7 @@
     - **[KNIME](https://docs.knime.com/)**: open-source visual platform for building analyses of any complexity
     - **[RapidMiner (Altair AI Studio)](https://altair.com/altair-rapidminer)**: visual platform for data science and data mining
 - **Data Visualization**
+    - **[Altair](https://altair-viz.github.io/)**: declarative Python visualization library built on Vega-Lite
     - **[D3](https://d3js.org/)**: JavaScript library for custom, data-driven visualizations in the browser
     - **[Matplotlib](https://matplotlib.org/stable/)**: Python's foundational plotting library
         - **[Seaborn](https://seaborn.pydata.org/)**: statistical plotting library built on Matplotlib

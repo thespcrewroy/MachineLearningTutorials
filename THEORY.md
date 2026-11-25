@@ -114,6 +114,7 @@
     - **Sampling**: picking a representative subset of data to analyze
     - **Tidy Data**: a layout where each row is one observation and each column is one variable
 - **Data Visualization**: representing data graphically with charts, plots, and interactive dashboards
+- **DataFrame**: a table of labeled rows and columns held in memory for analysis, as in pandas or Spark
 - **EDA (Exploratory Data Analysis)**: summarizing and plotting a dataset to spot patterns, outliers, and problems before modeling
 - **Regex (Regular Expression)**: a pattern language for searching, matching, and extracting text
 - **Statistical Computing**: using programming languages and software to perform statistical analysis
@@ -199,6 +200,7 @@
         - **Gradient Boosting**: a boosting method that fits each new tree to the remaining errors of the ensemble
 - **Evolutionary Computation**: optimization methods inspired by natural selection and evolution
     - **Genetic Algorithm**: evolves candidate solutions through selection, crossover, and mutation
+- **Feature**: an input variable a model uses to make predictions
 - **Feature Engineering**: creating, transforming, or selecting input variables to help a model learn
     - **Categorical Encoding**: converting categories into numbers, e.g. one-hot or label encoding
     - **Feature Scaling**: rescaling features to a common range so no single feature dominates
@@ -219,9 +221,11 @@
     - **Cross-Entropy Loss**: compares predicted class probabilities to true labels, standard for classification
 - **ML Framework**: a library for building, training, and running machine learning models
 - **ML Platform**: a managed cloud service for building, training, and deploying ML models
+- **ML Workflow (End-to-End ML Workflow)**: loading and exploring data, training and evaluating a model, then predicting
 - **MLOps (Machine Learning Operations)**: practices for tracking, deploying, and monitoring machine learning models
     - **Experiment Tracking**: logging the parameters, metrics, and artifacts of training runs so they can be compared
     - **Model Deployment**: serving a trained model so apps and users can request predictions
+        - **MaaS (Model as a Service)**: hosting a trained model as a service that other apps call through an API
         - **Model Serialization**: saving a trained model to a file so it can be reloaded later
 - **Model Evaluation**: measuring how well a trained model performs on data it has not seen
     - **Classification Metrics**: accuracy, precision, recall, and F1 score built from the confusion matrix
@@ -254,6 +258,7 @@
             - **Experience Replay**: training on random batches of stored past transitions to stabilize learning
     - **RL Environment**: a simulated world that an RL agent observes, acts in, and gets rewards from
 - **Supervised Learning**: training models on labeled data to predict outputs from inputs
+    - **Classification**: predicting which category an input belongs to
     - **Decision Boundary**: the line or surface where a classifier switches from one class to another
         - **Linear Separability**: when one straight line or plane can split the classes
     - **Decision Tree**: a model that predicts by splitting data on feature values in a tree of if-then rules
@@ -262,6 +267,7 @@
         - **Information Gain**: the drop in entropy from a split, used to pick the feature to split on
         - **Pruning**: trimming a tree's branches to reduce overfitting
     - **KNN (K-Nearest Neighbors)**: predicts from the labels of the closest data points
+    - **Label**: the output value a supervised model learns to predict
     - **Linear Regression**: fits a straight line or plane that predicts a numeric value from input features
         - **Multiple Linear Regression**: linear regression with more than one input feature
         - **Polynomial Regression**: regression that fits curved relationships using polynomial features
