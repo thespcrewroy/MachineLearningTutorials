@@ -114,6 +114,10 @@
 - **NLP (Natural Language Processing)**
     - **[NLTK (Natural Language Toolkit)](https://www.nltk.org/)**: Python library for tokenizing, tagging, and stemming text
 - **RAG (Retrieval-Augmented Generation)**
+    - **Vector Database**
+        - **[Chroma](https://docs.trychroma.com/)**: open-source embedding database popular for local RAG projects
+        - **[FAISS (Facebook AI Similarity Search)](https://github.com/facebookresearch/faiss)**: Meta's library for fast vector similarity search
+        - **[Pinecone](https://docs.pinecone.io/)**: managed cloud vector database with a free starter tier
     - **Vector Embedding**
         - **[Sentence Transformers](https://sbert.net/)**: Python library for text embeddings from pretrained models
 
@@ -165,6 +169,7 @@
         - **[Postman](https://learning.postman.com/docs/)**: app for building, testing, and documenting APIs
         - **[Requests](https://requests.readthedocs.io/)**: simple Python HTTP library for calling web APIs
         - **[TheSportsDB](https://www.thesportsdb.com/)**: crowd-sourced sports data and artwork API with a free key
+    - **[pypdf](https://pypdf.readthedocs.io/)**: Python library for extracting text and metadata from PDF files
     - **SQL (Structured Query Language)**
         - **[SQLAlchemy](https://docs.sqlalchemy.org/)**: Python SQL toolkit and ORM that lets pandas read and write many databases
         - **[SQLite](https://sqlite.org/docs.html)**: lightweight file-based SQL database built into Python
@@ -232,6 +237,7 @@
     - **Genetic Algorithm**
         - **[Jenetics](https://jenetics.io/)**: a Java library for genetic algorithms and evolutionary optimization
 - **ML Framework**
+    - **[MLX](https://ml-explore.github.io/mlx/)**: Apple's array and ML framework built for Apple Silicon
     - **[PyTorch](https://pytorch.org/docs/)**: Meta's deep learning framework, the standard for research and production
         - **[timm (PyTorch Image Models)](https://huggingface.co/docs/timm)**: Hugging Face's library of pretrained image models for PyTorch
         - **[torchaudio](https://docs.pytorch.org/audio/stable/)**: PyTorch's audio loading, transforms, and datasets

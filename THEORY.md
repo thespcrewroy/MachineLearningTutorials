@@ -41,6 +41,8 @@
     - **AI Music Generation**: creating songs, vocals, or background music from prompts
     - **AI Video Generation**: creating video clips or films from text, image, or video prompts
     - **AI Voice Generation**: synthesizing lifelike speech or cloning voices from text
+- **Interpretability (Explainability)**: how easily a person can understand why a model produced its result
+    - **Black Box**: a model whose internal reasoning can't easily be explained, like most neural networks
 - **LLM (Large Language Model)**: a neural network trained on huge text corpora to understand and generate language
     - **AI Chatbot**: a conversational interface for chatting with an LLM
     - **Distillation**: training a smaller student model to imitate the outputs or behavior of a larger teacher model
@@ -52,12 +54,14 @@
     - **Open-Weight Model**: a model whose trained weights are publicly released for anyone to run or fine-tune
         - **Gated Model**: an open-weight model you must accept a license for and use a token to download
     - **Pretraining**: training a model from scratch on a large unlabeled corpus
+    - **Training Cutoff (Knowledge Cutoff)**: the date after which a model knows nothing because its training data ends
 - **Model Hub**: a platform for sharing and downloading pretrained models, datasets, and demos
     - **Model Card**: documentation of a model's intended uses, limitations, and biases
 - **Multimodal Model**: a model that handles more than one type of data, such as images and text
     - **Image Captioning**: generating a text description of an image
 - **NLP (Natural Language Processing)**: teaching computers to understand, process, and generate human language
     - **Bag of Words**: represents text by its word counts, ignoring word order
+    - **Corpus**: the full collection of documents a model is trained on or a system searches
     - **Extractive Question Answering**: finding the answer to a question inside a given passage
     - **Lemmatization**: reducing words to their dictionary form, e.g. "better" → "good"
     - **Machine Translation**: converting text from one language to another
@@ -72,6 +76,8 @@
     - **Text Classification (Sentence Classification)**: labeling a whole sentence, like its sentiment or whether it's spam
     - **Text Generation**: continuing a prompt with generated text
     - **TF-IDF (Term Frequency–Inverse Document Frequency)**: weights words common in a document but rare overall
+        - **IDF (Inverse Document Frequency)**: how rare a word is across a collection, so words like "the" count less
+        - **TF (Term Frequency)**: how often a word appears in a document, normalized by document length
     - **Token Classification**: labeling each word in a sentence, as in part-of-speech tagging or NER
     - **Tokenization**: splitting text into units such as words, subwords, or sentences
         - **Attention Mask**: 1s and 0s telling a model which tokens are real and which are padding
@@ -88,8 +94,24 @@
 - **Prompt Engineering**: designing and refining model inputs to get accurate, useful outputs
 - **RAG (Retrieval-Augmented Generation)**: improving LLM answers by retrieving relevant documents and adding them to the prompt
     - **Chunking**: splitting documents into smaller passages before embedding them for retrieval
+        - **Chunk Overlap**: repeating some text between neighboring chunks so context isn't lost at the edges
+        - **Fixed-Size Chunking**: splitting text into chunks of a set length, which can cut ideas awkwardly
+        - **Semantic Chunking**: splitting text by meaning or structure, like paragraphs, so chunks stay coherent
+    - **Grounding**: basing an answer on retrieved context instead of the model's own memory
+    - **Information Retrieval**: finding the most relevant pieces of information for a query in a large collection
+        - **Hybrid Search**: retrieval that combines keyword search and semantic search
+        - **Keyword Search**: finding documents by matching the exact words in a query, as with TF-IDF
+        - **Semantic Search**: finding documents by meaning with embeddings, even when the wording differs
+        - **Similarity Search**: finding the stored vectors closest to a query vector
+            - **Top-K Retrieval**: returning the k chunks most similar to the query
+    - **Knowledge Base**: the collection of documents or data a system searches for answers
+    - **Prompt Augmentation**: inserting retrieved chunks into the prompt so the LLM reads instead of recalls
+    - **RAG Evaluation**: scoring retrieval by precision and recall, and answers by faithfulness and relevance
+        - **Answer Relevance**: how directly a generated answer addresses the question
+        - **Faithfulness**: how closely an answer sticks to the retrieved context without unsupported claims
     - **Re-Ranking**: reordering retrieved passages with a stronger model so the best come first
     - **Vector Database**: a database that stores embeddings and quickly finds those nearest a query
+        - **Vector Indexing**: organizing stored embeddings so similarity search stays fast across millions of chunks
     - **Vector Embedding**: a numeric vector that represents the meaning of text, images, or other data
         - **Cosine Similarity**: measures how alike two vectors are by the angle between them
         - **Semantic Similarity**: how close two pieces of data are in meaning
