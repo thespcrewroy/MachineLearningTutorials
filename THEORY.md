@@ -339,8 +339,15 @@
         - **MLP (Multilayer Perceptron)**: a feedforward network of stacked fully connected layers
         - **Perceptron**: a single artificial neuron that learns a linear decision boundary
         - **PINN (Physics-Informed Neural Network)**: a network whose loss also enforces known physics equations
+            - **Data Loss**: the part of a PINN's loss that measures how well predictions match known data points
+            - **Data-Driven Model**: a model that learns relationships purely from observed data
+            - **Physics Loss**: the part of a PINN's loss that measures how badly its output breaks the governing equation
+                - **Residual**: what's left when a model's output is plugged into a governing equation; zero means it fits
+            - **Physics-Based Model**: a model built from the equations that govern a system rather than learned
+            - **Total Loss**: data loss plus λ times physics loss, where λ sets how much the physics counts
         - **RNN (Recurrent Neural Network)**: a neural network with loops that processes sequences like text or time series
             - **LSTM (Long Short-Term Memory)**: an RNN with gated memory cells for long-range patterns
+        - **TINN (Theory-Informed Neural Network)**: a broader PINN that builds any known scientific theory into training
         - **Transformer**: a neural network architecture built on self-attention that underpins modern LLMs
             - **Attention Mechanism**: lets each token weigh how relevant every other token is to it
                 - **Attention Score**: how much one token focuses on another, where higher means more attention
@@ -387,6 +394,8 @@
     - **Feature Transformation**: applying a math function such as a log or square root to a feature
         - **Log Transformation**: replacing values with their logarithm to shrink large values and reduce skew
 - **Generalization**: how well a model performs on new data it has not seen
+    - **Extrapolation**: predicting values outside the range of known data, where models without physics are unreliable
+    - **Interpolation**: predicting values between known data points
 - **Gradient Descent**: an optimization method that iteratively adjusts parameters in the direction that reduces error
     - **AdaGrad**: shrinks each weight's learning rate based on its past gradients
     - **Adam (Adaptive Moment Estimation)**: gradient descent that adapts each parameter's learning rate
@@ -567,10 +576,20 @@
 ## Mathematics
 - **Calculus**: the mathematics of continuous change through derivatives and integrals
     - **Differential Calculus**: studies rates of change and slopes of curves through derivatives
+        - **Second-Order Derivative**: the derivative of a derivative, showing how a rate of change itself changes
     - **Integral Calculus**: studies accumulation, areas, and volumes through integrals
     - **Multivariable Calculus**: extends calculus to functions of several variables, essential for gradients in ML
+        - **Gradient**: the vector of partial derivatives showing how an output changes with each input
+        - **Partial Derivative**: a derivative with respect to one input while the others stay fixed
 - **Combinatorics**: the mathematics of counting, arranging, and combining objects
 - **Differential Equations**: equations relating functions to their derivatives, used to model change over time
+    - **Boundary Condition**: a known value of a system at its edges, like the temperature at both ends of a rod
+    - **Initial Condition**: a known value of a system at the starting time
+    - **ODE (Ordinary Differential Equation)**: relates a function to its derivatives with respect to one variable
+        - **Newton's Law of Cooling**: an object's rate of heat loss is proportional to its temperature difference
+    - **PDE (Partial Differential Equation)**: relates a function to its partial derivatives, as in heat flow
+        - **Burgers' Equation**: a PDE for fluid flow that combines motion and viscosity
+        - **Heat Equation (Diffusion Equation)**: a PDE describing how heat spreads through a material over time
 - **Discrete Mathematics**: the study of countable structures such as logic, sets, graphs, and integers
 - **Graph Theory**: the study of networks of nodes connected by edges
 - **Higher Mathematics**: advanced, proof-based mathematics beyond calculus
@@ -580,6 +599,8 @@
 - **Linear Algebra**: the mathematics of vectors, matrices, and linear transformations
 - **Linear Optimization**: finding the best outcome of a linear objective subject to linear constraints
 - **Numerical Analysis**: algorithms for approximating mathematical solutions on computers
+    - **Numerical Differentiation**: estimating a derivative from nearby function values instead of exactly
+        - **Finite Differences**: approximating a derivative from function values a small step apart
     - **RK4 (Fourth-Order Runge-Kutta)**: steps through a differential equation's solution with high accuracy
 - **Optimization**: finding the best solution to a problem under given conditions
     - **Dynamic Programming**: solving a problem by breaking it into subproblems and reusing their answers
