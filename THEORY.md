@@ -31,6 +31,7 @@
         - **YOLO (You Only Look Once)**: a fast detector that finds all objects in one pass
     - **OCR (Optical Character Recognition)**: converting images of text into machine-readable text
     - **Pose Estimation**: detecting body keypoints like joints to infer a person's pose
+    - **RGB (Red, Green, Blue)**: the three color channels that make up a color image
     - **Super-Resolution**: rebuilding a high-resolution image from a low-resolution one
 - **Deepfake**: synthetic media that swaps or fabricates a person's face or voice using AI
 - **Generative AI**: AI that creates new text, images, audio, video, or code from prompts
@@ -170,6 +171,7 @@
 - **Deep Learning**: machine learning with multi-layer neural networks that learn features directly from data
     - **FLOPs (Floating-Point Operations)**: counts the arithmetic a model needs, a standard measure of compute cost
     - **Model Compression**: shrinking a model's size or compute while keeping accuracy
+        - **Performance-Speed-Size Tradeoff**: balancing a model's accuracy, speed, and size; small models suit phones
         - **Weight Pruning**: removing low-importance weights from a network to make it smaller and faster
     - **Neural Network**: layers of connected nodes, loosely inspired by the brain, that learn patterns from data
         - **Activation Function**: adds non-linearity to a neuron's output, e.g. ReLU or sigmoid
@@ -184,7 +186,9 @@
         - **Batch Normalization**: normalizes layer inputs over each mini-batch to stabilize and speed up training
         - **CNN (Convolutional Neural Network)**: a neural network that uses convolution filters to learn spatial patterns in images
             - **AlexNet**: the 2012 ImageNet-winning CNN that launched the deep learning boom
+            - **Convolutional Layer (Conv)**: a layer of filters that detects patterns such as edges and shapes in images
             - **DenseNet**: a CNN that connects each layer to every later layer
+            - **EfficientNet**: a CNN family from B0 to B7 where higher numbers trade size for accuracy
             - **GoogLeNet (Inception)**: a CNN that runs several filter sizes in parallel inside each block
             - **LeNet**: LeCun's early CNN for handwritten digit recognition
             - **MobileNet**: a lightweight CNN built on depthwise separable convolutions for phones
@@ -198,6 +202,7 @@
                 - **Autoregressive Decoding**: generating one token at a time, each based on the ones before it
                 - **Beam Search**: keeps the top few partial outputs at each step instead of only the best
                 - **Teacher Forcing**: feeding the true previous token during training instead of the model's guess
+        - **Fully Connected Layer (Dense Layer)**: a layer where every neuron connects to every neuron in the previous layer
         - **GAN (Generative Adversarial Network)**: a generator and discriminator trained against each other
             - **Conditional GAN**: a GAN given extra input, like a label or image, to control what it generates
             - **Mode Collapse**: when a GAN's generator produces only a few kinds of outputs
@@ -217,7 +222,8 @@
             - **ViT (Vision Transformer)**: a transformer that classifies images by treating patches as tokens
         - **Universal Approximation Theorem**: one hidden layer with enough neurons can approximate any continuous function
         - **Weight Initialization**: choosing starting weights so signals don't vanish or explode, e.g. Xavier or Kaiming
-    - **Representation Learning**: learning useful features from data instead of hand-designing them
+        - **Weights**: the learned parameters of a neural network that store the patterns it has learned
+    - **Representation Learning (Feature Learning)**: learning useful features from data instead of hand-designing them
     - **Tensor**: a multi-dimensional array, the core data structure of deep learning frameworks
 - **Ensemble Learning**: combining multiple models to get better predictions than any single one
     - **Bagging**: trains models on random subsets of the data and averages their predictions
@@ -275,6 +281,7 @@
     - **ROC Curve**: plots true positive rate against false positive rate across thresholds
         - **AUC (Area Under the Curve)**: sums an ROC curve into one score, where 1 is perfect
     - **Train-Test Split**: holding out data so a model is tested on examples it never trained on
+    - **Training Set**: the data used to fit a model's weights
     - **Validation Set**: held-out data used during training to tune settings and catch overfitting
 - **Preprocessing Pipeline**: chaining data transformations so they are applied consistently in training and inference
 - **Recommender System**: suggests items a user may like based on past behavior or similar users
@@ -306,6 +313,7 @@
         - **Pruning**: trimming a tree's branches to reduce overfitting
     - **KNN (K-Nearest Neighbors)**: predicts from the labels of the closest data points
     - **Label**: the output value a supervised model learns to predict
+    - **Linear Classifier**: separates classes with a straight line or plane, often trained on CNN features
     - **Linear Regression**: fits a straight line or plane that predicts a numeric value from input features
         - **Multiple Linear Regression**: linear regression with more than one input feature
         - **Polynomial Regression**: regression that fits curved relationships using polynomial features
@@ -317,9 +325,14 @@
     - **SVM (Support Vector Machine)**: finds the boundary that separates classes with the widest margin
         - **Kernel**: a similarity function that lets an SVM draw non-linear boundaries
 - **Transfer Learning**: reusing a model trained on one task as the starting point for another
+    - **Classifier Head**: the final layers that turn features into predictions, replaced to fit a new task
     - **Feature Extraction**: freezing a pretrained model and training only a new output layer
+        - **CNN Codes**: feature vectors a pretrained CNN outputs, used as inputs to a new classifier
+    - **Feature Hierarchy**: early layers learn general features like edges, later layers task-specific ones
     - **Fine-Tuning**: further training a pretrained model on task-specific data
         - **LoRA (Low-Rank Adaptation)**: a parameter-efficient fine-tuning method that trains small low-rank matrices
+    - **Freezing**: keeping pretrained layers' weights fixed so only the new layers train, which limits overfitting
+    - **Pretrained Model**: a model already trained on a large dataset and reused as a starting point
 - **Unsupervised Learning**: finding patterns and structure in unlabeled data
     - **Anomaly Detection**: finding rare points or events that deviate from normal behavior
         - **Gaussian Anomaly Detection**: flags points that are unlikely under a Gaussian fit to normal data

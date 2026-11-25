@@ -229,6 +229,7 @@
         - **[Jenetics](https://jenetics.io/)**: a Java library for genetic algorithms and evolutionary optimization
 - **ML Framework**
     - **[PyTorch](https://pytorch.org/docs/)**: Meta's deep learning framework, the standard for research and production
+        - **[timm (PyTorch Image Models)](https://huggingface.co/docs/timm)**: Hugging Face's library of pretrained image models for PyTorch
         - **[torchaudio](https://docs.pytorch.org/audio/stable/)**: PyTorch's audio loading, transforms, and datasets
         - **[torchinfo](https://github.com/TylerYep/torchinfo)**: prints a PyTorch model's layers, output shapes, and parameter counts
         - **[torchvision](https://docs.pytorch.org/vision/stable/)**: PyTorch's image datasets, pretrained models, and transforms
