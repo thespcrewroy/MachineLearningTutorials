@@ -18,6 +18,7 @@
     - **Spectrogram**: a picture of how a sound's frequencies change over time
         - **Mel Spectrogram**: a spectrogram rescaled to the Mel scale to match how humans hear pitch
 - **Computer Vision**: teaching computers to interpret and understand images and video
+    - **ALPR (Automated License Plate Recognition)**: reading license plates from camera images with OCR
     - **Image Classification**: assigning one label to a whole image, such as "cat" or "truck"
     - **Image Segmentation**: splitting an image into regions to separate objects from the background
         - **Instance Segmentation**: also separates individual objects of the same class
@@ -25,6 +26,7 @@
     - **NeRF (Neural Radiance Fields)**: neural networks that reconstruct 3D scenes from a set of 2D images
     - **Object Detection**: finding and labeling objects in an image with bounding boxes
         - **Anchor Box**: a preset box shape a detector adjusts to fit each object
+        - **Bounding Box**: a rectangle around a detected object, given as coordinates
         - **IoU (Intersection over Union)**: how much a predicted box overlaps the true one
         - **mAP (Mean Average Precision)**: the standard accuracy score for object detectors
         - **NMS (Non-Maximum Suppression)**: drops overlapping boxes, keeping the most confident one
@@ -34,6 +36,7 @@
     - **Pose Estimation**: detecting body keypoints like joints to infer a person's pose
     - **RGB (Red, Green, Blue)**: the three color channels that make up a color image
     - **Super-Resolution**: rebuilding a high-resolution image from a low-resolution one
+    - **Visual Quality Inspection**: using cameras and AI to spot product defects, like a crooked cap or weld crack
 - **Deepfake**: synthetic media that swaps or fabricates a person's face or voice using AI
 - **Generative AI**: AI that creates new text, images, audio, video, or code from prompts
     - **AI Image Generation**: creating or editing images from text prompts
@@ -175,10 +178,21 @@
 
 ## IoT (Internet of Things)
 - **Digital Twin**: a virtual model of a physical system kept in sync with its real-time data
+- **Edge AI**: running AI models directly on local devices, like factory cameras, instead of in the cloud
+- **Home Automation**: controlling lights, locks, and appliances automatically through connected devices
 - **IIoT (Industrial Internet of Things)**: connected sensors and machines in factories, plants, and other industry
+- **LPWAN (Low-Power Wide-Area Network)**: long-range, low-power networks for IoT devices that send small data
+    - **LTE-M**: a low-power cellular standard for IoT devices
+    - **NB-IoT (Narrowband IoT)**: a low-power cellular standard for small, infrequent IoT messages
 - **MQTT (Message Queuing Telemetry Transport)**: a lightweight publish-subscribe messaging protocol for devices
     - **MQTT Broker**: the server that receives published messages and routes them to subscribers
+        - **Public Test Broker**: a free broker anyone can use for testing, like test.mosquitto.org; not for real data
+    - **MQTT Client**: a device or program that connects to a broker to publish or subscribe
+    - **Retained Message**: the last message on a topic, which the broker sends to every new subscriber
+    - **Topic**: a named channel messages are published to and subscribed from, like home/livingroom/temperature
 - **PID (Proportional-Integral-Derivative) Controller**: a feedback controller that steers a system toward a setpoint
+- **Telemetry**: automatically collecting measurements from remote devices and sending them for monitoring
+    - **Fleet Telematics**: tracking vehicles' GPS location and sensor data remotely
 
 ## Machine Learning
 - **AutoML (Automated Machine Learning)**: automating model selection, feature engineering, and hyperparameter tuning

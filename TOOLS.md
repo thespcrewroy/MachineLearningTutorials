@@ -199,6 +199,8 @@
     - **[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)**: Python package for parsing HTML and XML
 
 ## IoT (Internet of Things)
+- **Home Automation**
+    - **[Home Assistant](https://www.home-assistant.io/docs/)**: open-source home automation platform that integrates MQTT devices
 - **MQTT (Message Queuing Telemetry Transport)**
     - **[Eclipse Paho MQTT](https://github.com/eclipse-paho/paho.mqtt.python)**: Python client for publishing and subscribing to MQTT topics
     - **MQTT Broker**
