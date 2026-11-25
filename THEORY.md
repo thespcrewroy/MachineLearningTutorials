@@ -95,9 +95,11 @@
 - **Data App**: an interactive web app that lets users explore data or models
 - **Data Cleaning**: fixing incorrect, corrupted, duplicate, or incomplete data
     - **Deduplication**: finding and merging records that describe the same thing
-    - **Imputation**: filling in missing values with estimates such as the mean or median
+    - **Deletion (Dropping Missing Data)**: removing rows or columns that contain missing values
+    - **Imputation**: filling in missing values with estimates such as the mean, median, or mode
     - **Outlier Detection**: finding data points that differ sharply from the rest of the data
         - **IQR Method**: flags points more than 1.5 IQRs below Q1 or above Q3
+        - **Winsorization**: capping extreme values at a chosen percentile to limit the impact of outliers
 - **Data Integration**: combining data from different sources into one unified dataset
     - **API (Application Programming Interface)**: lets programs request data or services from each other
         - **REST API**: an API that exposes resources at URLs and acts on them with HTTP methods
@@ -142,6 +144,29 @@
     - **Cost-Sensitive Learning**: weighting mistakes by their cost, like missed fraud costing more
     - **SMOTE (Synthetic Minority Over-sampling Technique)**: creates synthetic minority-class examples
 - **Data Augmentation**: enlarging a training set with altered copies, like flipped images or reworded text
+    - **Audio Augmentation**: altering audio clips so a model learns from more varied sound
+        - **Background Noise Addition**: mixing background noise into an audio clip
+        - **Pitch Shifting**: changing the pitch of audio without changing its speed
+        - **Time Shifting**: moving audio samples forward or backward in time
+        - **Time Stretching**: changing the speed of audio without changing its pitch
+    - **Image Augmentation**: altering images so a model learns from more varied pictures
+        - **Color Space Adjustment**: changing an image's brightness, contrast, saturation, or hue
+        - **Geometric Transformation**: changing an image's position or shape
+            - **Cropping**: cutting out part of an image
+            - **Flipping**: mirroring an image horizontally or vertically
+            - **Rotation**: turning an image by an angle
+            - **Shearing**: slanting an image along an axis so it looks tilted
+            - **Translation**: shifting an image horizontally or vertically
+        - **Noise Injection**: adding random pixel noise to an image
+            - **Gaussian Noise**: random noise drawn from a normal distribution and added to every pixel
+            - **Salt-and-Pepper Noise**: turns scattered random pixels pure white or pure black
+    - **Over-Augmentation**: augmenting so heavily that the training examples become unrealistic
+    - **Text Augmentation**: altering sentences so a model learns from more varied wording
+        - **Back Translation**: translating a sentence into another language and then back again
+        - **Random Deletion**: deleting random words from a sentence
+        - **Random Insertion**: inserting random words into a sentence
+        - **Random Swap**: swapping the positions of two words in a sentence
+        - **Synonym Replacement**: replacing words with their synonyms
 - **Deep Learning**: machine learning with multi-layer neural networks that learn features directly from data
     - **FLOPs (Floating-Point Operations)**: counts the arithmetic a model needs, a standard measure of compute cost
     - **Model Compression**: shrinking a model's size or compute while keeping accuracy
@@ -203,10 +228,19 @@
 - **Evolutionary Computation**: optimization methods inspired by natural selection and evolution
     - **Genetic Algorithm**: evolves candidate solutions through selection, crossover, and mutation
 - **Feature**: an input variable a model uses to make predictions
+    - **Categorical Feature**: a feature whose values are categories instead of numbers, like country or color
 - **Feature Engineering**: creating, transforming, or selecting input variables to help a model learn
     - **Categorical Encoding**: converting categories into numbers, e.g. one-hot or label encoding
+        - **Label Encoding**: converting each category into a unique integer
+        - **One-Hot Encoding**: converting a categorical feature into one binary column per category
+    - **Feature Creation**: combining existing features to make new ones
     - **Feature Scaling**: rescaling features to a common range so no single feature dominates
+        - **Normalization (Min-Max Scaling)**: scaling a feature to a fixed range, usually 0 to 1
+        - **Standardization (Z-Score Scaling)**: scaling a feature to a mean of 0 and a variance of 1
     - **Feature Selection**: keeping only the features that help a model and dropping redundant ones
+    - **Feature Transformation**: applying a math function such as a log or square root to a feature
+        - **Log Transformation**: replacing values with their logarithm to shrink large values and reduce skew
+- **Generalization**: how well a model performs on new data it has not seen
 - **Gradient Descent**: an optimization method that iteratively adjusts parameters in the direction that reduces error
     - **AdaGrad**: shrinks each weight's learning rate based on its past gradients
     - **Adam (Adaptive Moment Estimation)**: gradient descent that adapts each parameter's learning rate
@@ -260,6 +294,7 @@
         - **DQN (Deep Q-Network)**: Q-learning that swaps the table for a neural network
             - **Experience Replay**: training on random batches of stored past transitions to stabilize learning
     - **RL Environment**: a simulated world that an RL agent observes, acts in, and gets rewards from
+- **Robustness**: how well a model stays accurate when its inputs are noisy, shifted, or perturbed
 - **Supervised Learning**: training models on labeled data to predict outputs from inputs
     - **Classification**: predicting which category an input belongs to
     - **Decision Boundary**: the line or surface where a classifier switches from one class to another
