@@ -14,9 +14,70 @@
 - **AI Tutor**: an AI tool that adapts explanations and practice to help a learner understand material
 - **Audio Analysis**: teaching computers to interpret sound such as speech, music, or environmental noise
     - **ASR (Automatic Speech Recognition)**: converting spoken audio into text
+    - **Audio Denoising**: removing background noise from audio to make recordings clearer
+    - **Audio Segmentation**: dividing audio into labeled sections such as speech, music, and silence
+    - **Automatic Tagging**: assigning descriptive labels to audio files based on their content
+    - **Decibel (dB)**: a log unit of sound level relative to the threshold of hearing; +10 dB is 10x the intensity
+    - **Digital Audio**: sound stored as a series of discrete numbers so computers can process it
+        - **Audio Sampling**: measuring a sound wave's amplitude at regular intervals to turn it into numbers
+            - **Nyquist-Shannon Sampling Theorem**: a signal must be sampled at least twice its highest frequency
+                - **Aliasing**: distortion from sampling too slowly, where a high frequency shows up as a false lower one
+            - **Sampling Rate**: the number of samples taken per second
+    - **Emotion Recognition**: detecting a speaker's emotion from their voice
+    - **Fourier Transform**: breaks a signal into the individual frequencies it contains
+        - **FFT (Fast Fourier Transform)**: an efficient algorithm for computing the Fourier transform
+        - **STFT (Short-Time Fourier Transform)**: applying the FFT to short overlapping frames to see frequencies change over time
+            - **Frame**: a short slice of an audio signal that features are computed from
+            - **Hop Length**: the number of samples between the starts of two consecutive frames
+            - **Windowing**: tapering each frame's edges to zero before the Fourier transform to reduce distortion
+    - **Frequency**: the number of wave cycles per second, measured in hertz (Hz)
+        - **Fundamental Frequency**: the lowest, main frequency of a sound, which sets its pitch
+        - **Harmonics**: frequencies at whole-number multiples of the fundamental frequency
+        - **Pitch**: how high or low a sound is, set by its frequency
+    - **Frequency Domain**: viewing a signal by which frequencies it contains and how strong each one is
+    - **Instrument Recognition**: identifying which instruments are playing in a piece of music
+    - **Low-Level Audio Features**: simple, hand-computed audio features used as inputs for traditional ML
+        - **Amplitude Envelope**: the maximum amplitude in each frame, tracing a sound's loudness over time
+        - **Band Energy Ratio**: the energy in lower frequency bands compared with higher ones
+        - **RMS Energy (Root Mean Square Energy)**: a signal's average strength, used to measure loudness
+        - **Spectral Centroid**: the center of mass of a spectrum; higher values sound brighter
+        - **Spectral Flux**: how quickly the spectrum changes between frames, useful for detecting sudden sounds
+        - **Spectral Roll-Off**: the frequency below which a set share of the energy, like 85%, is contained
+        - **Spectral Spread**: how widely a spectrum is spread out around its centroid
+        - **Zero Crossing Rate**: how often a signal crosses zero amplitude; high for noisy sounds, low for tonal ones
+    - **Mel Scale**: a pitch scale where equal steps sound equally far apart to human listeners
+        - **Mel Bands**: frequency groups on the mel scale, narrow for low frequencies and wide for high ones
     - **MFCC (Mel-Frequency Cepstral Coefficients)**: compact features that summarize a sound's spectrum
+        - **Cepstral Domain**: separates a sound's source from its filter by taking a Fourier transform of the log spectrum
+        - **Source-Filter Model**: a sound is a source, like vocal cords, shaped by a filter, like the vocal tract
+        - **Spectral Envelope**: the smooth outline of a spectrum that MFCCs capture, which carries timbre
+    - **Music Genre Classification**: sorting music into genres from its audio features
+        - **Mood Classification**: sorting music by the mood it expresses
+    - **Music Source Separation**: splitting a track into individual instruments or vocals
+    - **Phoneme**: the smallest unit of sound that tells words apart, like the b in bat versus the p in pat
+    - **SNR (Signal-to-Noise Ratio)**: how strong the useful signal is compared with background noise
+    - **Sound Classification**: predicting which sound class an audio clip belongs to
+        - **Sound Event Detection**: recognizing specific sounds when they happen, like a doorbell or smoke alarm
+    - **Sound Wave**: a vibration of air molecules that travels through the air and is heard as sound
+        - **Amplitude**: how far a wave's pressure moves from normal; larger amplitude means louder
+        - **Compression**: the part of a sound wave where air molecules are pushed together
+        - **Rarefaction**: the part of a sound wave where air molecules are spread apart
+        - **Waveform**: a plot of a sound's amplitude over time
+            - **Aperiodic Waveform**: a waveform with no repeating pattern
+                - **Noise**: continuous aperiodic sound
+                - **Transient**: a short, sudden burst of sound such as a click
+            - **Periodic Waveform**: a waveform that repeats in a regular pattern
+                - **Sine Wave**: a smooth wave made of a single frequency, the simplest periodic waveform
+    - **Speaker Recognition**: identifying who is speaking from their voice
+        - **Voice Biometrics**: verifying a person's identity from their unique voice characteristics
     - **Spectrogram**: a picture of how a sound's frequencies change over time
         - **Mel Spectrogram**: a spectrogram rescaled to the Mel scale to match how humans hear pitch
+    - **Speech Synthesis (TTS)**: converting text into natural-sounding speech
+        - **Tacotron**: Google's model that turns text into a spectrogram for speech synthesis
+        - **WaveNet**: DeepMind's model that generates realistic raw audio waveforms
+    - **Timbre**: the quality of a sound from its mix of frequencies, why a piano and guitar sound different
+    - **Time Domain**: viewing a signal as amplitude changing over time
+    - **Voice Conversion**: changing a speaker's voice to sound like someone else while keeping the words
 - **Computer Vision**: teaching computers to interpret and understand images and video
     - **ALPR (Automated License Plate Recognition)**: reading license plates from camera images with OCR
     - **Image Classification**: assigning one label to a whole image, such as "cat" or "truck"

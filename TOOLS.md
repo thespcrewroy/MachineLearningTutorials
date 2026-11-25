@@ -39,8 +39,10 @@
 - **[AlphaGeometry](https://github.com/google-deepmind/alphageometry)**: DeepMind's system that solves olympiad-level geometry problems
 - **Audio Analysis**
     - **ASR (Automatic Speech Recognition)**
+        - **[Wav2Vec 2.0](https://huggingface.co/docs/transformers/model_doc/wav2vec2)**: Meta's speech model that learns from raw audio, fine-tuned for ASR
         - **[Whisper](https://github.com/openai/whisper)**: OpenAI's open-source speech recognition and translation model
     - **[librosa](https://librosa.org/doc/latest/)**: Python package for music and audio analysis and feature extraction
+    - **[soundfile](https://python-soundfile.readthedocs.io/)**: Python package for reading and writing audio files
 - **Computer Vision**
     - **[GeoSpy](https://geospy.ai/)**: AI-powered tool that identifies the geographic location of photos
     - **[MediaPipe](https://ai.google.dev/edge/mediapipe)**: Google's on-device ML solutions for vision tasks like face, hand, and pose tracking
@@ -255,6 +257,7 @@
 - **MLOps (Machine Learning Operations)**
     - **Experiment Tracking**
         - **[MLflow](https://mlflow.org/docs/latest/)**: open-source platform for tracking experiments and managing the ML model lifecycle
+        - **[TensorBoard](https://www.tensorflow.org/tensorboard)**: visualizes training metrics like loss and reward over time
         - **[Weights & Biases](https://docs.wandb.ai/)**: platform for tracking experiments, comparing runs, and managing models
     - **Model Deployment**
         - **[Flask](https://flask.palletsprojects.com/)**: lightweight Python web framework often used to serve ML models
