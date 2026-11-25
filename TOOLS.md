@@ -101,12 +101,16 @@
     - **Open-Weight Model**
         - **[BLOOM](https://huggingface.co/bigscience/bloom)**: BigScience's open multilingual LLM hosted on Hugging Face
         - **[DeepSeek](https://www.deepseek.com/)**: Chinese open-weight LLMs and chat assistant with strong reasoning
+        - **[Gemma](https://ai.google.dev/gemma/docs)**: Google's open-weight model family, gated on Hugging Face
         - **[GLM](https://z.ai/)**: Zhipu AI's open-weight LLM family
         - **[Llama 3](https://www.llama.com/)**: Meta's open-weight LLM family
         - **[Qwen](https://qwen.ai/)**: Alibaba's open-weight LLM family
 - **Model Hub**
     - **[Hugging Face](https://huggingface.co/docs)**: the flagship community for sharing models, datasets, and AI demos
+        - **[Hugging Face Accelerate](https://huggingface.co/docs/accelerate)**: runs the same PyTorch code across CPUs, GPUs, and TPUs
         - **[Hugging Face Datasets](https://huggingface.co/docs/datasets)**: library for loading and processing datasets from the Hub
+        - **[Hugging Face Diffusers](https://huggingface.co/docs/diffusers)**: library of pretrained diffusion models for image, video, and audio
+        - **[Hugging Face Hub Library](https://huggingface.co/docs/huggingface_hub)**: logs in and downloads or uploads models and datasets
 - **NLP (Natural Language Processing)**
     - **[NLTK (Natural Language Toolkit)](https://www.nltk.org/)**: Python library for tokenizing, tagging, and stemming text
 - **RAG (Retrieval-Augmented Generation)**

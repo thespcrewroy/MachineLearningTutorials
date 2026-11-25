@@ -7,6 +7,7 @@
     - **Multi-Agent Orchestration**: coordinating several specialized AI agents that divide and hand off work
     - **Tool Calling**: a model requesting a function with structured arguments, which code then runs
 - **AI Alignment**: making AI systems behave according to human intentions and values
+- **AI Bias (Model Bias)**: unfair prejudice a model learns from its training data, which fine-tuning does not remove
 - **AI Coding Assistant**: an editor plugin that suggests and completes code using AI
 - **AI Guardrails**: limits on what an AI system may do or say, like allowed tools, step caps, or output checks
 - **AI Research Assistant**: an AI tool that searches, reads, and summarizes sources to answer questions
@@ -49,20 +50,40 @@
     - **LLM Evaluation**: measuring model quality, accuracy, latency, and safety with repeatable tests
     - **LLM Framework**: a library for building apps that chain LLM calls, tools, and data sources
     - **Open-Weight Model**: a model whose trained weights are publicly released for anyone to run or fine-tune
+        - **Gated Model**: an open-weight model you must accept a license for and use a token to download
     - **Pretraining**: training a model from scratch on a large unlabeled corpus
 - **Model Hub**: a platform for sharing and downloading pretrained models, datasets, and demos
+    - **Model Card**: documentation of a model's intended uses, limitations, and biases
 - **Multimodal Model**: a model that handles more than one type of data, such as images and text
+    - **Image Captioning**: generating a text description of an image
 - **NLP (Natural Language Processing)**: teaching computers to understand, process, and generate human language
     - **Bag of Words**: represents text by its word counts, ignoring word order
+    - **Extractive Question Answering**: finding the answer to a question inside a given passage
     - **Lemmatization**: reducing words to their dictionary form, e.g. "better" → "good"
+    - **Machine Translation**: converting text from one language to another
+    - **Masked Language Modeling (Fill-Mask)**: predicting a hidden [MASK] word in a sentence from its context
     - **N-gram**: a sequence of n consecutive words, like a bigram or trigram
     - **NER (Named Entity Recognition)**: labeling people, places, and organizations in text
     - **POS Tagging (Part-of-Speech Tagging)**: labeling each word as a noun, verb, adjective, etc.
     - **Sentiment Analysis**: classifying text as positive, negative, or neutral
     - **Stemming**: chopping suffixes off words to get a crude root, e.g. "running" → "run"
     - **Stop Words**: common words like "the" and "is" that are often removed before analysis
+    - **Summarization**: producing a shorter version of a text that keeps its main points
+    - **Text Classification (Sentence Classification)**: labeling a whole sentence, like its sentiment or whether it's spam
+    - **Text Generation**: continuing a prompt with generated text
     - **TF-IDF (Term Frequency–Inverse Document Frequency)**: weights words common in a document but rare overall
+    - **Token Classification**: labeling each word in a sentence, as in part-of-speech tagging or NER
     - **Tokenization**: splitting text into units such as words, subwords, or sentences
+        - **Attention Mask**: 1s and 0s telling a model which tokens are real and which are padding
+        - **Input IDs**: the integer token IDs a model actually receives as input
+        - **Padding**: adding filler tokens so every sequence in a batch has the same length
+            - **Dynamic Padding**: padding each batch only to its longest sequence to save compute
+        - **Special Tokens**: tokens that mark structure, like [CLS] at the start and [SEP] at the end in BERT
+            - **CLS Token (Class Token)**: a token whose final representation is used to classify the whole input
+        - **Subword**: a piece of a word, so a tokenizer can split rare words into known parts
+        - **Token**: a unit of text a model processes, such as a word, subword, or punctuation mark
+        - **Tokenizer**: turns text into token IDs using the same rules the model was pretrained with
+        - **Truncation**: cutting sequences longer than a model's maximum length
     - **Word2Vec**: learns word embeddings from the words around each word, using CBOW or skip-gram
 - **Prompt Engineering**: designing and refining model inputs to get accurate, useful outputs
 - **RAG (Retrieval-Augmented Generation)**: improving LLM answers by retrieving relevant documents and adding them to the prompt
@@ -71,6 +92,8 @@
     - **Vector Database**: a database that stores embeddings and quickly finds those nearest a query
     - **Vector Embedding**: a numeric vector that represents the meaning of text, images, or other data
         - **Cosine Similarity**: measures how alike two vectors are by the angle between them
+        - **Semantic Similarity**: how close two pieces of data are in meaning
+        - **Vector Space**: the space embeddings live in, where distance or angle shows similarity
 
 ## Big Data
 - **Data Lakehouse**: combines a data lake's cheap, flexible storage with a warehouse's structured querying
@@ -176,7 +199,9 @@
     - **Neural Network**: layers of connected nodes, loosely inspired by the brain, that learn patterns from data
         - **Activation Function**: adds non-linearity to a neuron's output, e.g. ReLU or sigmoid
             - **ReLU (Rectified Linear Unit)**: outputs the input if positive and zero otherwise
+            - **Sigmoid**: squashes a value to between 0 and 1
             - **Softmax**: turns a layer's outputs into class probabilities that sum to 1
+        - **Add & Norm**: adds a layer's input back to its output, then applies layer normalization
         - **Autoencoder**: a network that learns to compress and rebuild its input, often to spot anomalies
             - **Denoising Autoencoder**: learns to rebuild clean inputs from corrupted ones
         - **Backpropagation**: computing error gradients layer by layer to update a neural network's weights
@@ -193,6 +218,7 @@
             - **LeNet**: LeCun's early CNN for handwritten digit recognition
             - **MobileNet**: a lightweight CNN built on depthwise separable convolutions for phones
             - **Pooling**: downsampling feature maps by keeping the max or average of each region
+            - **Receptive Field**: the region of the input a neuron can see, small and local in early CNN layers
             - **ResNet (Residual Network)**: a CNN with skip connections that make very deep networks trainable
             - **Transposed Convolution**: upsamples feature maps with a learned convolution (deconvolution)
             - **U-Net**: an encoder-decoder CNN with skip connections, built for image segmentation
@@ -202,11 +228,14 @@
                 - **Autoregressive Decoding**: generating one token at a time, each based on the ones before it
                 - **Beam Search**: keeps the top few partial outputs at each step instead of only the best
                 - **Teacher Forcing**: feeding the true previous token during training instead of the model's guess
+        - **Forward Pass**: sending inputs through a network to produce predictions
         - **Fully Connected Layer (Dense Layer)**: a layer where every neuron connects to every neuron in the previous layer
         - **GAN (Generative Adversarial Network)**: a generator and discriminator trained against each other
             - **Conditional GAN**: a GAN given extra input, like a label or image, to control what it generates
             - **Mode Collapse**: when a GAN's generator produces only a few kinds of outputs
+        - **Hidden State**: the vector a network outputs for each token or patch, holding its learned representation
         - **Layer Normalization**: normalizes across one example's features, standard in transformers
+        - **Logits**: the raw, unnormalized scores a model outputs before softmax turns them into probabilities
         - **MLP (Multilayer Perceptron)**: a feedforward network of stacked fully connected layers
         - **Perceptron**: a single artificial neuron that learns a linear decision boundary
         - **PINN (Physics-Informed Neural Network)**: a network whose loss also enforces known physics equations
@@ -214,12 +243,23 @@
             - **LSTM (Long Short-Term Memory)**: an RNN with gated memory cells for long-range patterns
         - **Transformer**: a neural network architecture built on self-attention that underpins modern LLMs
             - **Attention Mechanism**: lets each token weigh how relevant every other token is to it
+                - **Attention Score**: how much one token focuses on another, where higher means more attention
                 - **Cross-Attention**: lets a decoder attend to the encoder's outputs
                 - **Masked Self-Attention**: hides future tokens so a decoder only looks backward
                 - **Multi-Head Attention**: runs several attentions in parallel to catch different relationships
-            - **BERT (Bidirectional Encoder Rep. from Transformers)**: encoder-only transformer pretrained on masked words
+                    - **Attention Head**: one of the parallel attentions, such as one tracking syntax and another meaning
+                - **Self-Attention**: every token in a sequence weighs every other token in the same sequence
+            - **Decoder-Only Model**: a transformer with only a decoder, suited to generating text
+                - **GPT (Generative Pretrained Transformer)**: OpenAI's decoder-only model family for text generation
+            - **Encoder-Only Model**: a transformer with only an encoder, suited to understanding tasks like classification
+                - **BERT (Bidirectional Encoder Rep. from Transformers)**: encoder-only transformer pretrained on masked words
+                    - **DistilBERT**: a smaller, faster version of BERT that keeps most of its accuracy
+            - **Feed-Forward Layer**: the fully connected layer in each transformer block that processes every position
             - **Positional Encoding**: adds word-order information, since attention alone ignores order
+                - **Learned Positional Embedding**: a position vector the model learns in training instead of fixed values
             - **ViT (Vision Transformer)**: a transformer that classifies images by treating patches as tokens
+                - **Image Patching**: splitting an image into fixed-size squares, like 16x16 pixels, that act as tokens
+                - **Patch Embedding**: projecting each flattened patch into a fixed-size vector, like a word embedding
         - **Universal Approximation Theorem**: one hidden layer with enough neurons can approximate any continuous function
         - **Weight Initialization**: choosing starting weights so signals don't vanish or explode, e.g. Xavier or Kaiming
         - **Weights**: the learned parameters of a neural network that store the patterns it has learned
@@ -250,10 +290,13 @@
 - **Gradient Descent**: an optimization method that iteratively adjusts parameters in the direction that reduces error
     - **AdaGrad**: shrinks each weight's learning rate based on its past gradients
     - **Adam (Adaptive Moment Estimation)**: gradient descent that adapts each parameter's learning rate
+    - **Batch Size**: the number of samples processed together in one training step
+        - **Mini-Batch**: a small group of training samples processed together in one step
     - **Epoch**: one full pass of the training data through a model
     - **Learning Rate**: the step size gradient descent takes on each update
         - **Learning Rate Schedule**: lowers the learning rate during training, e.g. step or exponential decay
     - **Momentum**: adds part of the previous update so steps keep a steady direction
+    - **Optimizer**: the algorithm that updates weights to reduce the loss, such as SGD or Adam
     - **RMSProp**: scales each weight's learning rate by a moving average of recent gradients
     - **SGD (Stochastic Gradient Descent)**: gradient descent that updates after each random example (or small batch)
 - **Hyperparameter Tuning**: searching for the best settings fixed before training, like tree depth
@@ -270,16 +313,19 @@
     - **Model Deployment**: serving a trained model so apps and users can request predictions
         - **MaaS (Model as a Service)**: hosting a trained model as a service that other apps call through an API
         - **Model Serialization**: saving a trained model to a file so it can be reloaded later
+            - **Checkpoint**: a saved snapshot of a model's weights, used to resume training or reload the model
 - **Model Evaluation**: measuring how well a trained model performs on data it has not seen
     - **Classification Metrics**: accuracy, precision, recall, and F1 score built from the confusion matrix
     - **Confusion Matrix**: a table of predicted vs. actual classes behind accuracy, precision, and recall
     - **Cross-Validation**: rotating the held-out data across folds for a more reliable score
     - **Data Leakage**: when test or future information leaks into training and inflates scores
     - **Feature Importance**: how much each feature contributes to a model's predictions
+    - **Ground Truth**: the correct labels that a model's predictions are compared against
     - **Learning Curve**: plots training and validation scores as data grows to spot a poor fit
     - **Regression Metrics**: MAE, RMSE, and R² measure how far numeric predictions are from true values
     - **ROC Curve**: plots true positive rate against false positive rate across thresholds
         - **AUC (Area Under the Curve)**: sums an ROC curve into one score, where 1 is perfect
+    - **Test Set**: data held out until the end for a final, unbiased measure of performance
     - **Train-Test Split**: holding out data so a model is tested on examples it never trained on
     - **Training Set**: the data used to fit a model's weights
     - **Validation Set**: held-out data used during training to tune settings and catch overfitting
@@ -324,8 +370,9 @@
         - **Sequential Covering**: learns rules one at a time, removing the examples each covers
     - **SVM (Support Vector Machine)**: finds the boundary that separates classes with the widest margin
         - **Kernel**: a similarity function that lets an SVM draw non-linear boundaries
+- **Training Loop**: repeating the forward pass, loss calculation, backpropagation, and weight update
 - **Transfer Learning**: reusing a model trained on one task as the starting point for another
-    - **Classifier Head**: the final layers that turn features into predictions, replaced to fit a new task
+    - **Classifier Head (Model Head)**: the final layers that turn features into predictions, replaced to fit a new task
     - **Feature Extraction**: freezing a pretrained model and training only a new output layer
         - **CNN Codes**: feature vectors a pretrained CNN outputs, used as inputs to a new classifier
     - **Feature Hierarchy**: early layers learn general features like edges, later layers task-specific ones
