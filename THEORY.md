@@ -101,6 +101,8 @@
 - **Data Integration**: combining data from different sources into one unified dataset
     - **API (Application Programming Interface)**: lets programs request data or services from each other
         - **REST API**: an API that exposes resources at URLs and acts on them with HTTP methods
+    - **Data Enrichment**: adding related data from other sources to an existing dataset, also called augmentation
+    - **Data Source**: where data originates, such as a database, spreadsheet, file, website, or API
     - **JSON (JavaScript Object Notation)**: a text format of nested key-value data, the usual format of web API responses
     - **SQL (Structured Query Language)**: the standard language for querying and managing relational databases
 - **Data Mining**: extracting and discovering patterns in large datasets
@@ -217,8 +219,9 @@
 - **Hyperparameter Tuning**: searching for the best settings fixed before training, like tree depth
     - **Grid Search**: trying every combination of values in a predefined hyperparameter grid
     - **Random Search**: tries random hyperparameter combinations instead of every one
-- **Loss Function**: measures how far predictions are from the true values; training minimizes it
+- **Loss Function (Cost Function)**: measures how far predictions are from the true values; training minimizes it
     - **Cross-Entropy Loss**: compares predicted class probabilities to true labels, standard for classification
+    - **MSE (Mean Squared Error)**: averages the squared differences between predictions and true values
 - **ML Framework**: a library for building, training, and running machine learning models
 - **ML Platform**: a managed cloud service for building, training, and deploying ML models
 - **ML Workflow (End-to-End ML Workflow)**: loading and exploring data, training and evaluating a model, then predicting
